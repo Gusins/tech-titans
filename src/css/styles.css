@@ -1,4 +1,4 @@
-@import url("./reset.css");
+@import url("../../node_modules/normalize.css/normalize.css");
 @import url("./common.css");
 
 @import url("./header.css");
