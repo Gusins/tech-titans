@@ -8,18 +8,57 @@
 	font-weight: normal;
 }
 :root {
-	--font-family: "Poppins", sans-serif;
-	--second-family: "Impact", sans-serif;
-	--black: #292929;
-	--accet-green: #00b068;
-	--white: #f0f0f0;
-	--light-grey: #e4e5e6;
-	--light-accent: #bcdfd1;
-
-	--darkTh-black: #1e2023;
-	--darkTh-accet-green: #14c57c;
-	--darkTh-light-grey: #2a2d32;
-	--darkTh-light-accent: #204136;
+	--font-impact: Impact, sans-serif;
+	--font-poppins-medium: "Poppins Medium", sans-serif;
+	--font-poppins-light: "Poppins Light", sans-serif;
+	--font-poppins-regular: "Poppins Regular", sans-serif;
+  
+	--font-size-h1-mobile: 64px;
+	--letter-spacing-h1-mobile: 1.8px;
+	--line-height-h1-mobile: 80px;
+  
+	--font-size-h1-desktop-tablet: 136px;
+	--letter-spacing-h1-desktop-tablet: 1.8px;
+	--line-height-h1-desktop-tablet: 156px;
+  
+	--font-size-h2-mobile: 52px;
+	--letter-spacing-h2-mobile: 1.8px;
+	--line-height-h2-mobile: 64px;
+  
+	--font-size-h2-desktop-tablet: 108px;
+	--letter-spacing-h2-desktop-tablet: 1.8px;
+	--line-height-h2-desktop-tablet: 124px;
+  
+	--font-size-h3-mobile: 32px;
+	--letter-spacing-h3-mobile: 0.5px;
+	--line-height-h3-mobile: 40px;
+  
+	--font-size-h3-desktop-tablet: 36px;
+	--letter-spacing-h3-desktop-tablet: 0.5px;
+	--line-height-h3-desktop-tablet: 48px;
+  
+	--font-size-body: 16px;
+	--letter-spacing-body1: 0.2px;
+	--line-height-body: 24px;
+  
+	--font-size-caption: 20px;
+	--letter-spacing-caption: 0.5px;
+	--line-height-caption: 32px;
+  
+	--font-size-caption-alt: 18px;
+	--line-height-caption-alt: 28px;
+  
+	--secondary-color-for-white: #BCDFD1;
+	--accent-color-for-white: #00B068;
+	--secend-background-color-for-white: #E4E5E6;
+	--first-background-color-for-white: #F0F0F0;
+	--text-for-white: #292929;
+  
+	--secondary-color-for-black: #204136;
+	--accent-color-for-black: #14C57C;
+	--secend-background-color-for-black: #2A2D32;
+	--first-background-color-for-black: #1E2023;
+	--text-for-black: #F0F0F0;
 }
 /* Reset styles */
 h1,
