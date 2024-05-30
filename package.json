@@ -1,21 +1,42 @@
 {
-  "name": "vanilla-app-template",
+  "name": "tech-titans",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build --base=/vanilla-app-template/",
-    "preview": "vite preview"
+    "start": "vite",
+    "build": "vite build --base=/tech-titans/",
+    "preview": "vite preview",
+    "p": "bash push.sh"
   },
   "devDependencies": {
-    "vite": "^4.5.2",
-    "glob": "^8.1.0"
+    "glob": "^8.1.0",
+    "vite": "^4.5.2"
   },
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "accordion-js": "^3.3.4",
+    "axios": "^1.7.2",
+    "swiper": "^11.1.4",
     "vite-plugin-full-reload": "^1.0.5",
     "vite-plugin-html-inject": "^1.0.1"
-  }
+  },
+  "description": "Ten projekt został zbudowany przy użyciu Vite. Aby zapoznać się i skonfigurować\r dodatkowe funkcje [zapoznaj się z dokumentacją](https://vitejs.dev/).",
+  "main": "vite.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fovardell/TechTitans.git"
+  },
+  "keywords": [
+    "team",
+    "project",
+    "html",
+    "css",
+    "js"
+  ],
+  "bugs": {
+    "url": "https://github.com/Fovardell/TechTitans/issues"
+  },
+  "homepage": "https://github.com/Fovardell/TechTitans#readme"
 }

@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@font-face {
+	font-family: "Impact";
+	src: url("../fonts/impact.eot");
+	src: url("../fonts/impact.woff") format("woff"), url("../fonts/impact.ttf") format("truetype"),
+		url("../fonts/impact.svg") format("svg");
+	font-style: normal;
+	font-weight: normal;
+}
+:root {
+	--font-family: "Poppins", sans-serif;
+	--second-family: "Impact", sans-serif;
+	--black: #292929;
+	--accet-green: #00b068;
+	--white: #f0f0f0;
+	--light-grey: #e4e5e6;
+	--light-accent: #bcdfd1;
+
+	--darkTh-black: #1e2023;
+	--darkTh-accet-green: #14c57c;
+	--darkTh-light-grey: #2a2d32;
+	--darkTh-light-accent: #204136;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+main {
+	flex: 1 0 auto;
+}
+footer {
+	flex-shrink: 0;
+}
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
