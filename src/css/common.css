@@ -97,9 +97,19 @@ img {
 }
 /* common styles */
 body {
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
+	font-family: var(--font-impact);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  font-weight: 400;
+  background-color: var(--first-background-color-for-black);
+  color: var(--text-for-black);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  overflow-x: hidden; 
 }
 .main {
 	flex: 1 0 auto;
