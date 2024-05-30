@@ -59,3 +59,12 @@
     text-decoration: none;
     cursor: pointer;
   }
+
+  @media (min-width: 360px) and (max-width: 767px) {
+    .div-header {
+      width: 360px;
+      margin-right: auto;
+      margin-left: auto;
+  }
+
+  }
