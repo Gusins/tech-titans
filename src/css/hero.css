@@ -1,7 +1,7 @@
 .hero-section {
   height: 968px;
   width: 100%; 
-  background-color: var(--first-background-color-for-black);
+  background-color: var(--first-background-color-for-white);
   /* background-image: url(/img/HeroDecorMobile.png); */
   background-size: cover; 
   background-position: center;
@@ -29,7 +29,7 @@
 }
 
 .fullstack-developer-span {
-  color: var(--accent-color-for-black);
+  color: var(--accent-color-for-white);
 }
 
 /* .profile-picture {
@@ -49,8 +49,8 @@
   font-size: var(--font-size-caption);
   letter-spacing: var(--letter-spacing-caption);
   line-height: var(--line-height-caption);
-  background-color: var(--first-background-color-for-black);
-  color: var(--text-for-black);
+  background-color: var(--first-background-color-for-white);
+  color: var(--text-for-white);
   border: none;
   align-items: center;
 }
@@ -62,15 +62,15 @@
 }
 
 .highlighted-text {
-  background-color: var(--secondary-color-for-black);
+  background-color: var(--secondary-color-for-white);
   border-radius: 16px;
   padding: 0 8px; 
-  color: var(--text-for-black);
+  color: var(--text-for-white);
 }
 
 .hero-div-span-for-style {
   display: flex;
-  background-color: var(--secondary-color-for-black);
+  background-color: var(--secondary-color-for-white);
   border-radius: 16px;
   width: 165px;
   height: 100%;
@@ -87,20 +87,20 @@
   font-size: var(--font-size-caption-alt);
   letter-spacing: var(--letter-spacing-caption-alt);
   line-height: var(--line-height-caption-alt);
-  background-color: var(--first-background-color-for-black);
-  color: var(--text-for-black);
+  background-color: var(--first-background-color-for-white);
+  color: var(--text-for-white);
   padding: 16px; 
 }
 
 .hero-history-p-span {
-  color: var(--accent-color-for-black);
+  color: var(--accent-color-for-white);
 }
 
 .hero-social-div {
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: var(--secend-background-color-for-black);
+  background-color: var(--secend-background-color-for-white);
 }
 
 .hero-social-list {
@@ -116,7 +116,7 @@
   font-size: var(--font-size-body);
   line-height: var(--line-height-body);
   font-weight: 400;
-  color: var(--text-for-black);
+  color: var(--text-for-white);
 }
 
 .hero-main-open {

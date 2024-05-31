@@ -101,8 +101,8 @@ body {
   font-size: var(--font-size-body);
   line-height: var(--line-height-body);
   font-weight: 400;
-  background-color: var(--first-background-color-for-black);
-  color: var(--text-for-black);
+  background-color: var(--first-background-color-for-white);
+  color: var(--text-for-white);
   margin: 0;
   padding: 0;
   display: flex;
