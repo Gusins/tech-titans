@@ -21,7 +21,19 @@
 	--darkTh-light-grey: #2a2d32;
 	--darkTh-light-accent: #204136;
 }
+
 /* Reset styles */
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
 h1,
 h2,
 h3,
@@ -56,11 +68,14 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+
 /* common styles */
+
 body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+	background-color: var(--white);
 }
 .main {
 	flex: 1 0 auto;
@@ -79,4 +94,12 @@ body {
 	clip-path: inset(100%);
 	clip: rect(0 0 0 0);
 	overflow: hidden;
+}
+section {
+	padding-bottom: 80px;
+}
+.container {
+	max-width: 360px;
+	padding: 0 20px;
+	margin: 0 auto;
 }

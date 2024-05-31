@@ -1,91 +1,67 @@
-.container {
-    max-width: 375px;
-    padding: 0 20px;
-    margin: 0 auto;
-    background-color: #fbfbfb;
+.about-block {
+	margin-bottom: 40px;
 }
-.about-me {
-    padding-top: 80px;
-    padding-bottom: 80px;
+.about-block:last-child {
+	margin-bottom: 0;
 }
 .about-title {
-    font-family: "Impact", sans-serif;
-    font-weight: 400;
-    font-size: 52px;
-    line-height: 1.23077;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    text-align: left;
-    color: #292929;
-    margin-bottom: 40px;
+	font-family: var(--second-family);
+	font-weight: 400;
+	font-size: 52px;
+	line-height: 1.23;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--black);
+	margin-bottom: 40px;
 }
 .about-title-span {
-    color: #00b068;
+	color: var(--accet-green);
 }
 .about-description-title {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
-    color: #292929;
-    margin-bottom: 32px;
+	font-family: var(--font-family);
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 1.25;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	color: var(--black);
+	margin-bottom: 32px;
 }
-.about-description-text-1 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.03em;
-    color: #292929;
-    margin-bottom: 24px;
+
+.about-description-text {
+	font-family: var(--font-family);
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.03em;
+	color: var(--black);
+	margin-bottom: 24px;
 }
-.about-description-text-2 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.03em;
-    color: #292929;
-}
-.about-edu {
-    padding-top: 40px;
-}
-.about-edu-title {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
-    color: #292929;
-    margin-bottom: 32px;
-}
-.about-edu-text {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.03em;
-    color: #292929;
-    padding-bottom: 12px;
-}
-.about-role {
-    padding-top: 28px;
-}
+
 .about-edu-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+	padding-left: 32px;
+	margin-bottom: 12px;
+
+	position: relative;
+}
+.about-edu-item.about-edu-item-role {
+	padding-left: 24px;
+}
+.about-edu-item.about-edu-item-role::before {
+	left: 6px;
+	top: 10px;
+}
+.about-edu-item:last-child {
+	margin-bottom: 0;
 }
 .about-edu-item::before {
-    content: '';
-    display: block;
-    width: 4px;
-    height: 4px;
-    background-color:  #00b068;
-    transform: rotate(-180deg);
-    border-radius: 1px;
-    flex-shrink: 0;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	content: "";
+	display: block;
+	width: 4px;
+	height: 4px;
+	border-radius: 1px;
+	background: var(--accet-green);
 }
