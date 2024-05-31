@@ -1,4 +1,91 @@
-.about-me {
-}
 .container {
+    max-width: 375px;
+    padding: 0 20px;
+    margin: 0 auto;
+    background-color: #fbfbfb;
+}
+.about-me {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.about-title {
+    font-family: "Impact", sans-serif;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 1.23077;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: left;
+    color: #292929;
+    margin-bottom: 40px;
+}
+.about-title-span {
+    color: #00b068;
+}
+.about-description-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #292929;
+    margin-bottom: 32px;
+}
+.about-description-text-1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: #292929;
+    margin-bottom: 24px;
+}
+.about-description-text-2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: #292929;
+}
+.about-edu {
+    padding-top: 40px;
+}
+.about-edu-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #292929;
+    margin-bottom: 32px;
+}
+.about-edu-text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: #292929;
+    padding-bottom: 12px;
+}
+.about-role {
+    padding-top: 28px;
+}
+.about-edu-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.about-edu-item::before {
+    content: '';
+    display: block;
+    width: 4px;
+    height: 4px;
+    background-color:  #00b068;
+    transform: rotate(-180deg);
+    border-radius: 1px;
+    flex-shrink: 0;
 }
