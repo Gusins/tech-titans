@@ -1,4 +1,153 @@
-.hero {
-}
-.container {
-}
+.hero-section {
+    height: 968px;
+    width: 100%; 
+    background-color: #F0F0F0;
+    /* background-image: url(/img/HeroDecorMobile.png); */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .hero-main-div {
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+    width: 100%;
+    padding-left: 20px; 
+    align-items: center; 
+  }
+  
+  .hero-content {
+    display: flex;
+    width: 100%;
+    margin-top: 96px; 
+    justify-content: center; 
+  }
+  
+  .hero-h1 {
+    font-size: 64px;
+    width: 100%;
+    font-family: Impact, sans-serif;
+    font-weight: 400;
+    letter-spacing: 1.8px;
+    line-height: 80px;
+  }
+  
+  .fullstack-developer-span {
+    color: #00B068;
+  }
+  
+  .profile-picture {
+    display: none;
+  }
+  
+  .hero-div-button {
+    display: flex;
+    margin-top: 60px; 
+    height: 96px;
+    width: 100%;
+    justify-content: center; 
+  }
+  
+  .hero-button {
+    display: flex;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    line-height: 32px;
+    color: #292929;
+    border: none;
+    align-items: center;
+  }
+  
+  .hero-button span {
+    display: flex;
+    align-items: center;
+    margin-right: 8px; 
+  }
+  
+  .highlighted-text {
+    background-color: #BCDFD1; 
+    border-radius: 16px;
+    padding: 0 8px; 
+    color: #292929;
+  }
+  
+  .hero-div-span-for-style {
+    display: flex;
+    background-color: #BCDFD1;
+    border-radius: 16px;
+    width: 165px;
+    height: 100%;
+  }
+  
+  .hero-history-div {
+    margin-top: 40px; 
+    margin-bottom: 72px; 
+    width: 320px;
+  }
+  
+  .hero-history-p {
+    font-family: "Poppins Regular", sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    background-color: #F0F0F0;
+    color: #292929;
+    padding: 16px; 
+  }
+  
+  .hero-history-p-span {
+    color: #00B068;
+  }
+  
+  .hero-social-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #E4E5E6;
+  }
+  
+  .hero-social-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin: 32px auto; 
+  }
+  
+  .hero-social-li {
+    font-family: "Poppins Light", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #292929;
+  }
+  
+  .hero-main-open {
+    height: 760px;
+    width: 100%;
+    display: flex;
+  }
+  
+  .menu-items-opens {
+    display: flex;
+    width: 100%;
+    gap: 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  @media (min-width: 360px) and (max-width: 767px) {
+   
+  .hero-content{
+    width: 360px;
+      margin-right: auto;
+      margin-left: auto;
+  }
+  .hero-main-div {
+    width: 360px;
+      margin-right: auto;
+      margin-left: auto;
+  }
+  }
