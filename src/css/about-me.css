@@ -1,3 +1,27 @@
+.container {
+    max-width: 360px;
+    padding: 0 20px;
+    margin: 0 auto;
+    background-color: #fbfbfb;
+}
+.about-me {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.about-title {
+    font-family: "Impact", sans-serif;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 1.23077;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: left;
+    color: #292929;
+    margin-bottom: 40px;
+}
+.about-title-span {
+    color: #00b068;
+}
 .about-description-title {
 	font-family: var(--font-family);
 	font-weight: 500;
