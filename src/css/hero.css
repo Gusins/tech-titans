@@ -161,5 +161,11 @@
 }
 
 @media (min-width: 768px) and (max-width: 1500px) {
-
+  .hero-content{
+    width: 704px;
+  }
+  .hero-main-div {
+    width: 704px;
+  
+  }
 }

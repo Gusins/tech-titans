@@ -11,6 +11,7 @@
   width: 100%;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header-logo {
@@ -35,15 +36,15 @@
   margin: 20px 20px 20px auto;
 }
 
-.menu-title {
+.header-menu-title {
   display: flex;
   margin-right: 20px;
   align-items: center;
   cursor: pointer;
 }
 
-.menu-items {
-  display: none;
+.header-menu-items {
+  
   list-style-type: none;
   position: relative;
   padding: 0;
@@ -61,6 +62,12 @@
 
 .menu-title svg {
   margin-right: 8px;
+}
+
+.header-menu-div {
+  display: none;
+  align-items: center;
+  cursor: pointer;
 }
 
 .close {
@@ -89,5 +96,44 @@
 }
 
 @media (min-width: 768px) and (max-width: 1500px) {
+  .header-main  {
+    height: 96px;
+  }
+  .div-header {
+    width: 704px;
+    gap: 0px
+  }
+  .header-logo {
+    margin: 32px auto 32px 32px;
+  }
+  .header-menu {
+    margin: 32px 32px 32px auto;
+  }
+  .header-menu-title {
+    display: none;
+  }
+  .header-menu-div {
+    display: flex;
+   
+  }
+  .header-menu-items {
+    display: flex;
+    gap: 40px;
+  }
+
+  .header-logo-p {
+    font-family: Impact;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 1.5px;
+  }
+  .header-menu-li {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+  }
 
 }
