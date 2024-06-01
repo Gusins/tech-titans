@@ -1,22 +1,3 @@
-.about-block {
-	margin-bottom: 40px;
-}
-.about-block:last-child {
-	margin-bottom: 0;
-}
-.about-title {
-	font-family: var(--second-family);
-	font-weight: 400;
-	font-size: 52px;
-	line-height: 1.23;
-	letter-spacing: 0.03em;
-	text-transform: uppercase;
-	color: var(--black);
-	margin-bottom: 40px;
-}
-.about-title-span {
-	color: var(--accet-green);
-}
 .about-description-title {
 	font-family: var(--font-family);
 	font-weight: 500;
@@ -29,19 +10,12 @@
 }
 
 .about-description-text {
-	font-family: var(--font-family);
-	font-weight: 300;
-	font-size: 16px;
-	line-height: 1.5;
-	letter-spacing: 0.03em;
-	color: var(--black);
 	margin-bottom: 24px;
 }
 
 .about-edu-item {
 	padding-left: 32px;
 	margin-bottom: 12px;
-
 	position: relative;
 }
 .about-edu-item.about-edu-item-role {
