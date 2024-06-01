@@ -8,9 +8,9 @@
 	<title>Vanilla App Template</title>
 	
   <script type="module" crossorigin src="/tech-titans/commonHelpers.js"></script>
-  <link rel="modulepreload" crossorigin href="/tech-titans/assets/vendor-8635c165.js">
-  <link rel="stylesheet" href="/tech-titans/assets/vendor-7c8ef494.css">
-  <link rel="stylesheet" href="/tech-titans/assets/index-c6213552.css">
+  <link rel="modulepreload" crossorigin href="/tech-titans/assets/vendor-1c96f17f.js">
+  <link rel="stylesheet" href="/tech-titans/assets/vendor-e5212ee8.css">
+  <link rel="stylesheet" href="/tech-titans/assets/index-2c8aea9b.css">
 </head>
 
 <body>
@@ -143,14 +143,7 @@
 		</p>
 	</div>
 </section>
-		<!-- 
-
-"Секція також містить форму, що включає обовʼязкові до заповнення елементи <input> та кнопку “Send message"" типу submit. Полю для введення електронної пошти слід додати мінімальну валідацію введених даних  за допомогою  атрибуту pattern=""^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"". 
-По clickу на кнопку ""Send message"" необхідно відправити  POST запит на сервер про створення заявки щодо співпраці та у разі успішного створення - повідомити про це користувача, відкривши відповідне модальне вікно, в цьому випадку слід також очистити форму. Якщо з сервера буде повернута помилка - користувачеві слід повідомити про це за допомогою вспливаючого повідомлення і надати можливість відкорегувати введені значення (не очищувати форму) для їх подальшої повторної відправки."
-
--->
-
-<section class="work-together">
+		<section class="work-together">
 	<div class="container">
 		<h2 class="title">
 			let’s<span class="title-accent">work together</span>
@@ -175,10 +168,23 @@
 				</address>
 			</div>
 			<form class="form">
-				<input class="contacts-email form-items" type="text" name="email"
-					placeholder="Your email*">
-				<textarea class="contacts-message form-items" name="text"
-					placeholder="Message"></textarea>
+				<label class="contacts-label">
+					<input class="contacts-email form-items" type="text" name="user_email"
+						placeholder="Your email*">
+					<p class="invalid-email">
+						Invalid email, try again
+					</p>
+					<img class="success-svg" src="../img/svg/success-mark.svg">
+				</label>
+
+				<label class="contacts-label">
+					<textarea class="contacts-message form-items" name="user_message"
+						placeholder="Message"></textarea>
+					<p class="invalid-text">
+						Message must contain from 10 characters
+					</p>
+					<img class="success-svg" src="../img/svg/success-mark.svg">
+				</label>
 				<button class="contacts-button form-items" type="submit">SEND
 					MESSAGE</button>
 			</form>
