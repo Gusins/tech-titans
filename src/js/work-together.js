@@ -11,15 +11,16 @@ iziToast.settings({
 	transitionOut: 'fadeOutLeft',
 	timeout: 3000
 });
-
 // ======================== Валідація форми ================
 const userEmail = document.querySelector('.contacts-email');
 const form = document.querySelector('.form');
 const invalidEmail = document.querySelector(".invalid-email");
 const invalidText = document.querySelector(".invalid-text");
 const userMessage = document.querySelector(".contacts-message");
+const modal = document.querySelector('.modal-window');
 const pattern = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
-
+const modalTitle = document.querySelector(".modal-header");
+const modalText = document.querySelector(".modal-text");
 const isEmailValid = function () {
 	return pattern.test(userEmail.value);
 };
@@ -44,10 +45,9 @@ const formSubmit = function (event) {
 		email: inputedEmail,
 		comment: inputedComment ? inputedComment : "I`m interested in cooperation!"
 	}).then(response => {
-		iziToast.success({
-			title: response.data.title,
-			message: response.data.message,
-		});
+		modal.classList.remove("is-hidden");
+		modalTitle.innerHTML = `${response.data.title}`;
+		modalText.innerHTML = `${response.data.message}`;
 		form.reset();
 	}).catch(error => {
 		iziToast.error({
