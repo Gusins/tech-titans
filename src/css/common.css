@@ -15,13 +15,26 @@
 	--white: #f0f0f0;
 	--light-grey: #e4e5e6;
 	--light-accent: #bcdfd1;
+	--default-animation: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 
 	--darkTh-black: #1e2023;
 	--darkTh-accet-green: #14c57c;
 	--darkTh-light-grey: #2a2d32;
 	--darkTh-light-accent: #204136;
 }
+
 /* Reset styles */
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
 h1,
 h2,
 h3,
@@ -46,7 +59,9 @@ a {
 	color: currentColor;
 	text-decoration: none;
 }
-
+address {
+	font-style: normal;
+}
 button {
 	cursor: pointer;
 }
@@ -56,11 +71,15 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+
 /* common styles */
+
 body {
+	font-family: var(--font-family);
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+	background-color: var(--white);
 }
 .main {
 	flex: 1 0 auto;
@@ -79,4 +98,71 @@ body {
 	clip-path: inset(100%);
 	clip: rect(0 0 0 0);
 	overflow: hidden;
+}
+section {
+	padding-top: 80px;
+}
+section:last-child {
+	padding-bottom: 80px;
+}
+section:first-child {
+	padding-top: 0px;
+}
+.container {
+	max-width: 360px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.title {
+	font-family: var(--second-family);
+	font-weight: 400;
+	font-size: 52px;
+	line-height: 1.23;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--black);
+	margin-bottom: 40px;
+}
+.title-accent {
+	color: var(--accet-green);
+}
+.info-block {
+	margin-bottom: 40px;
+}
+.info-block:last-child {
+	margin-bottom: 0;
+}
+.text {
+	font-family: var(--font-family);
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.03em;
+	color: var(--black);
+}
+.attantion-text {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.56;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--black);
+}
+
+/* tablet */
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+	section {
+		padding-top: 124px;
+	}
+	section:last-child {
+		padding-bottom: 124px;
+		padding-top: 0px;
+	}
+	.container {
+		min-width: calc(704px + (32px * 2));
+		padding: 0 32px;
+		margin: 0 auto;
+	}
 }

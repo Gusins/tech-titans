@@ -1,4 +1,41 @@
-.about-me {
+.about-description-title {
+	font-family: var(--font-family);
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 1.25;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	color: var(--black);
+	margin-bottom: 32px;
 }
-.container {
+
+.about-description-text {
+	margin-bottom: 24px;
+}
+
+.about-edu-item {
+	padding-left: 32px;
+	margin-bottom: 12px;
+	position: relative;
+}
+.about-edu-item.about-edu-item-role {
+	padding-left: 24px;
+}
+.about-edu-item.about-edu-item-role::before {
+	left: 6px;
+	top: 10px;
+}
+.about-edu-item:last-child {
+	margin-bottom: 0;
+}
+.about-edu-item::before {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	content: "";
+	display: block;
+	width: 4px;
+	height: 4px;
+	border-radius: 1px;
+	background: var(--accet-green);
 }
