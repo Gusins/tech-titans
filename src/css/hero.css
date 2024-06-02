@@ -253,7 +253,7 @@
     display: flex;
     align-items: flex-start;
   }
-  
+   
 .profile-row {
     display: flex;
     justify-content: center;
@@ -274,6 +274,7 @@
 .fullstack-developer-span {
   display: flex; 
 }
+  
 
 
 .hero-div-for-dectop {
