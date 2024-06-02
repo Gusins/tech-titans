@@ -1,41 +1,40 @@
+(() => {
+	const mobileMenu = document.querySelector('.js-menu-container');
+	const openMenuBtn = document.querySelector('.js-open-menu');
+	const smoothLinks = document.querySelectorAll('a[href^="#"]');
+	const toggleMenu = () => {
+		const isMenuOpen = openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+		openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
+		openMenuBtn.classList.toggle('burger-active');
+		mobileMenu.classList.toggle('is-open');
+		document.body.classList.toggle('modal-open');
+		const scrollLockMethod = !isMenuOpen
+			? 'disableBodyScroll'
+			: 'enableBodyScroll';
+		bodyScrollLock[scrollLockMethod](mobileMenu);
+	};
+	openMenuBtn.addEventListener('click', toggleMenu);
+	window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
+		if (!e.matches) return;
+		mobileMenu.classList.remove('is-open');
+		openMenuBtn.setAttribute('aria-expanded', false);
+		bodyScrollLock.enableBodyScroll(mobileMenu);
+	});
+	for (let smoothLink of smoothLinks) {
+		smoothLink.addEventListener('click', function (e) {
+			e.preventDefault();
+			const id = smoothLink.getAttribute('href');
+			document.querySelector(id).scrollIntoView({
+				behavior: 'smooth',
+				block: 'start',
+			});
+		});
+	}
+	const menuLinks = document.querySelectorAll('.menu-box-link');
+	menuLinks.forEach(link => {
+		link.addEventListener('click', toggleMenu);
+	});
+})();
 
-export const CHANGE_HTML_FOR_HERO = () => {
-    const HERO_MAIN_DIV = document.querySelector('.hero-main-div');
-    const EXISTING_ELEMENT = document.querySelector('.hero-main-open');
-    const OPEN_MODAL_BTN = document.getElementById('openModalBtn');
-  
-    if (EXISTING_ELEMENT) {
-      EXISTING_ELEMENT.remove();
-      HERO_MAIN_DIV.style.display = "block";
-    
-      OPEN_MODAL_BTN.innerHTML = `
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <path d="M3 6h18M3 12h18M3 18h18" stroke="black" stroke-width="2" stroke-linecap="round"/>
-        </svg>
-      `;
-    } else {
-      let NEW_ELEMENT = document.createElement('div');
-      NEW_ELEMENT.className = 'hero-main-open';
-      NEW_ELEMENT.innerHTML = `
-        <ul class="menu-items-opens">
-          <li class="hero-social-li"><a href="#about-me">About me</a></li>
-          <li class="hero-social-li"><a href="#projects">Projects</a></li>
-          <li class="hero-social-li"><a href="#contacts">Contacts</a></li>
-        </ul>
-      `;
-  
-      HERO_MAIN_DIV.style.display = "none"; 
-      HERO_MAIN_DIV.parentNode.insertBefore(NEW_ELEMENT, HERO_MAIN_DIV);
-   
-      OPEN_MODAL_BTN.innerHTML = `
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <path d="M6 6L18 18M6 18L18 6" stroke="black" stroke-width="2" stroke-linecap="round"/>
-        </svg>
-      `;
-    }
-  };
-  
-  
 
-  
-  
+export * from "./mobile-menu";
