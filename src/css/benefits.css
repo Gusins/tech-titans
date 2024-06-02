@@ -1,10 +1,5 @@
-.benefits {
-  padding-top: 113px;
-  padding-bottom: 47px;
-}
+
 .benefits-title {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
   font-family: 'Impact', sans-serif;
   font-weight: 400;
   font-size: 52px;
@@ -17,7 +12,6 @@
 
 .benefits-title span {
   color: #00b068;
-=======
   font-family: var(--second-family);
   color: var(--black);
   font-weight: 400;
@@ -31,32 +25,21 @@
 
 .benefits-title span {
   color: var(--accet-green);
->>>>>>> Stashed changes
-}
-=======
-  max-width: 320px;
-  margin-bottom: 40px;
 }
 
->>>>>>> Stashed changes
 .benefits-list {
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
-<<<<<<< Updated upstream
+
 .benefits-list-item {
-<<<<<<< Updated upstream
-=======
   margin-bottom: 32px;
 }
 .benefits-list-item:last-child {
   margin-bottom: 0;
->>>>>>> Stashed changes
 }
-=======
 
->>>>>>> Stashed changes
 .benefits-icons-section {
   display: flex;
   justify-content: center;
@@ -77,23 +60,15 @@
 }
 
 .benefits-subtitle {
-<<<<<<< Updated upstream
-  font-family: 'Poppins Regular', sans-serif;
-=======
-  font-family: var(--font-family);
->>>>>>> Stashed changes
   font-weight: 400;
   font-size: 18px;
   letter-spacing: 0.03em;
   line-height: 1.5;
   text-transform: uppercase;
-<<<<<<< Updated upstream
   margin-bottom: 16px;
 }
 .benefits-item-text {
-=======
   color: var(--black);
-
   margin-bottom: 16px;
 }
 .benefits-item-text {
@@ -148,17 +123,13 @@
   margin-bottom: 16px;
 }
 .benefits-item-text {
->>>>>>> Stashed changes
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.01em;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
   color: #292929;
   width: 320px;
-=======
   color: var(--text);
   max-width: 320px;
 }
@@ -224,12 +195,6 @@
   .benefits-list-item:nth-child(4) {
     grid-column: 3;
   }
->>>>>>> Stashed changes
-=======
-  color: var(--text);
-  max-width: 320px;
->>>>>>> Stashed changes
-}
 
 @media screen and (min-width: 768px) {
   .benefits {
