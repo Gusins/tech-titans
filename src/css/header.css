@@ -12,6 +12,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .header-logo {
@@ -84,14 +86,12 @@
   cursor: pointer;
 }
 
+.container {
+  width: 100%;
+}
 @media (min-width: 360px) and (max-width: 3000px) {
   .div-header {
     width: 360px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .container {
-    width: 100%;
   }
 }
 

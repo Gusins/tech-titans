@@ -109,6 +109,8 @@
   justify-content: center;
   width: 100%;
   background-color: #E4E5E6;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .hero-social-list {
@@ -154,6 +156,9 @@
   width: 360px;
     margin-right: auto;
     margin-left: auto;
+}
+.hero-social-div {
+  width: 100%;
 }
 }
 
