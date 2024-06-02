@@ -5,6 +5,8 @@
   /* background-image: url(/img/HeroDecorMobile.png); */
   background-size: cover;
   background-position: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .hero-main-div {
@@ -145,7 +147,7 @@
 }
 
 
-@media (min-width: 360px) and (max-width: 3000px) {
+@media (min-width: 360px) {
  
 .hero-content{
   width: 360px;
@@ -162,7 +164,7 @@
 }
 }
 
-@media (min-width: 768px) and (max-width: 3000px) {
+@media (min-width: 768px) {
   .hero-section{
     height: 1032px;
   }
@@ -228,7 +230,7 @@
   }
 }
 
-@media (min-width: 1280px) and (max-width: 3000px) {
+@media (min-width: 1280px) {
 
   .hero-section{
     height: 908px;

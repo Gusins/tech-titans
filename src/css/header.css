@@ -2,6 +2,8 @@
   display: flex;
   width: 100%;
   height: 64px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .div-header {
@@ -89,19 +91,21 @@
 .container {
   width: 100%;
 }
-@media (min-width: 360px) and (max-width: 3000px) {
+@media (min-width: 360px) {
   .div-header {
     width: 360px;
   }
 }
 
-@media (min-width: 768px) and (max-width: 3000px) {
+@media (min-width: 768px) {
   .header-main  {
     height: 96px;
   }
   .div-header {
     width: 768px;
-    gap: 0px
+    gap: 0px;
+    margin-right: auto;
+  margin-left: auto;
   }
   .header-logo {
     margin : 32px auto 32px 32px;
@@ -138,7 +142,7 @@
 
 }
 
-@media (min-width: 1280px) and (max-width: 3000px) {
+@media (min-width: 1280px) {
   .div-header {
     width: 1280px;
   }
