@@ -14,9 +14,9 @@ export const CHANGE_HTML_FOR_HERO = () => {
         </svg>
       `;
     } else {
-      let NEW_ELEMENT = document.createElement('div');
-      NEW_ELEMENT.className = 'hero-main-open';
-      NEW_ELEMENT.innerHTML = `
+      let new_element = document.createElement('div');
+      new_element.className = 'hero-main-open';
+      new_element.innerHTML = `
         <ul class="menu-items-opens">
           <li class="hero-social-li"><a href="#about-me">About me</a></li>
           <li class="hero-social-li"><a href="#projects">Projects</a></li>
@@ -25,7 +25,7 @@ export const CHANGE_HTML_FOR_HERO = () => {
       `;
   
       HERO_MAIN_DIV.style.display = "none"; 
-      HERO_MAIN_DIV.parentNode.insertBefore(NEW_ELEMENT, HERO_MAIN_DIV);
+      HERO_MAIN_DIV.parentNode.insertBefore(new_element, HERO_MAIN_DIV);
    
       OPEN_MODAL_BTN.innerHTML = `
         <svg width="24" height="24" viewBox="0 0 24 24">
