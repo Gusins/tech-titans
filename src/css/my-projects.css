@@ -1,4 +1,202 @@
 .my-projects {
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 80px;
+    }
 }
-.container {
-}
+
+    .projects-title {
+        font-family: 'Impact', sans-serif;
+        font-size: 52px;
+        line-height: 1.23077;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 40px;
+        color: #292929;
+
+        @media screen and (min-width: 768px) {
+            font-size: 108px;
+            line-height: 1.14815;
+            letter-spacing: 0.02em;
+            margin-bottom: 60px;
+
+        }
+
+        @media screen and (min-width: 1280px) {
+            font-size: 108px;
+            line-height: 1.14815;
+            letter-spacing: 0.02em;
+            margin-bottom: 80px;
+        }
+    }
+
+    .projects-span {
+        color: #00b068;
+    }
+
+    .projects-list {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        @media screen and (min-width: 767px) {
+            gap: 60px;
+        }
+
+        @media screen and (min-width: 1279px) {
+            gap: 80px;
+        }
+    }
+
+    .my-projects-card {
+        max-width: 320px;
+        flex-direction: column;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+
+        @media screen and (min-width: 767px) {
+            max-width: 704px;
+        }
+
+        @media screen and (min-width: 1279px) {
+            max-width: 1008px;
+        }
+    }
+
+    .my-projects-card.loaded {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .my-projects-card-img {
+        border-radius: 16px;
+        margin-bottom: 12px;
+    }
+
+    .my-projects-card-stack {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.03em;
+        color: #333;
+        margin-bottom: 16px;
+
+        @media screen and (min-width: 767px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    .projects-card-container {
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            align-items: flex-start;
+
+
+        }
+    }
+
+    .projects-card-title {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+
+        @media screen and (min-width: 768px) {
+            align-items: flex-start;
+            font-size: 36px;
+            line-height: 1.33333;
+            letter-spacing: 0.01em;
+            margin-bottom: 0;
+        }
+    }
+
+    .projects-card-link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 8px;
+        padding: 12px 24px;
+        width: 125px;
+        height: 48px;
+        margin-left: auto;
+        gap: 12px;
+
+        background-color: #e4e5e6;
+    }
+
+    .projects-card-link:hover {
+        background-color: #bbb;
+    }
+
+    .projects-card-link-span {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.03em;
+        color: #292929;
+        margin-right: 5px;
+    }
+
+    .projects-card-link-svg {
+        stroke-width: 2px;
+        width: 24px;
+        height: 24px;
+        color: #00b068;
+    }
+
+    .projects-load {
+        margin: 0 auto;
+        display: flex;
+        padding: 12px 24px;
+        color: inherit;
+        font-size: 18px;
+        line-height: 1.55;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        background-color: transparent;
+        position: relative;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+        margin-top: 52px;
+
+        @media screen and (min-width: 768px) {
+            margin-top: 60px;
+            font-size: 20px;
+            line-height: 1.6;
+        }
+
+        @media screen and (min-width: 1280px) {
+            margin-top: 80px;
+        }
+    }
+
+    .projects-load::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: #14c57c;
+        bottom: -5px;
+        left: 0;
+        animation: expand-width 2s infinite;
+    }
+
+    .projects-load:hover {
+        color: #00b068;
+        background-color: #bbb;
+    }

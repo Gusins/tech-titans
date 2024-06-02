@@ -1,4 +1,4 @@
-// TODO: добавити посилання на зображення проектів, та їх назви в масив, та додавати по  3 штуки по кліку load more, зробити перевірку, якщо зображень в масиві немає - не відображати кнопку. Добавити transition, щоб анімувати виїзд проектів.
+// TODO: добавити посилання на зображення проектів, та їх назви в масив, та додавати по  3 штуки по кліку load more, зробити перевірку, якщо зображень в масиві немає - не відображати кнопку load more. Добавити transition, щоб анімувати виїзд проектів.
 
 const projects = [
   {
@@ -111,7 +111,7 @@ const refs = {
   loadMoreBtn: document.querySelector('.projects-load')
 };
 
-const createProjectMarkup = (project) => {
+const createProjectMarkup = function(project) {
   return `<li class="my-projects-card">
     <img class="my-projects-card-img" srcset="${project.img.srcset}" src="${project.img.src}" alt="${project.img.alt}" />
     <p class="my-projects-card-stack">${project.stack}</p>
@@ -127,15 +127,17 @@ const createProjectMarkup = (project) => {
   </li>`;
 };
 
-const loadProjects = () => {
+const loadProjects = function() {
   const projectsToLoad = projects.slice(currentIndex, currentIndex + projectsPerLoad);
   const markup = projectsToLoad.map(createProjectMarkup).join('');
   refs.projectsList.insertAdjacentHTML('beforeend', markup);
 
   // Add animation
   const newCards = document.querySelectorAll('.my-projects-card:not(.loaded)');
-  setTimeout(() => {
-    newCards.forEach(card => card.classList.add('loaded'));
+  setTimeout(function() {
+    newCards.forEach(function(card) {
+      card.classList.add('loaded');
+    });
   }, 10);
 
   currentIndex += projectsPerLoad;
@@ -147,5 +149,5 @@ const loadProjects = () => {
 
 refs.loadMoreBtn.addEventListener('click', loadProjects);
 
-// Initial load of projects
+// Initial load projects
 loadProjects();
