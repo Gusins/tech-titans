@@ -1,21 +1,36 @@
 .reviews {
-  /* padding: 0px 20px;
-  width: 360px;
-  height: 464px; */
+}
+.swiper {
+  width: 100%;
+  height: 100% !important;
+  position: relative !important;
 }
 .container {
 }
 .swiper-wrapper {
-  /* max-width: 320px;
-  max-height: 360px; */
-  /* margin: 0 auto; */
+  height: auto !important;
+  align-items: stretch !important;
 }
-ul > .swiper-slide {
+.reviews-title {
+  font-family: 'Impact', sans-serif;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.23077;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #292929;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.swiper-slide {
   border-radius: 16px;
   padding: 32px;
-  max-width: 320px;
-  max-height: 296px;
-  background: #e4e5e6;
+  background-color: var(--light-grey);
+
+  min-height: 224px;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .swiper-text {
   font-family: 'Poppins', sans-serif;
@@ -24,7 +39,7 @@ ul > .swiper-slide {
   line-height: 1.5;
   letter-spacing: 0.03em;
   color: #292929;
-  padding-bottom: 24px;
+  margin-bottom: 24px;
 }
 .swiper-img {
   border-radius: 24px;
@@ -44,4 +59,59 @@ ul > .swiper-slide {
   letter-spacing: 0.03em;
   color: #292929;
   padding: 8px 0 8px;
+}
+.reviews-slider {
+  margin-top: 24px;
+  display: flex;
+  gap: 16px;
+  justify-content: end;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  position: relative !important;
+  margin-top: 0 !important;
+  border: 1px solid var(--reviews-slider-btn-border);
+  border-radius: 8px;
+  padding: 12px;
+  width: 40px !important;
+  height: 40px !important;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiper-button-prev {
+  transform: rotate(180deg);
+}
+.swiper-button-prev svg,
+.swiper-button-next svg {
+  flex-shrink: 0;
+  fill: transparent;
+  stroke: var(--text);
+}
+.notification {
+  display: flex;
+
+  align-items: center;
+  color: red;
+}
+.slider-error-text {
+  margin: 0 auto;
+  font-size: 24px;
+}
+@media screen and (min-width: 1280px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 48px !important;
+    height: 48px !important;
+    transition: background 0.4s ease;
+    outline: none;
+    cursor: pointer;
+  }
+  .swiper-button-next:focus,
+  .swiper-button-prev:focus,
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    background-color: var(--light-grey);
+  }
 }

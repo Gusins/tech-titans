@@ -1,23 +1,21 @@
 <section class="reviews">
   <div class="container">
-    <h2>Reviews</h2>
-    <div class="swiper">
-      <ul class="swiper-wrapper">
-        <li class="swiper-slide"></li>
-        <li class="swiper-slide"></li>
-        <li class="swiper-slide"></li>
-        <li class="swiper-slide"></li>
-        <li class="swiper-slide"></li>
-        <li class="swiper-slide"></li>
-      </ul>
-      <div class="swiper-pagination"></div>
-
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-
-      <!-- If we need scrollbar -->
-      <div class="swiper-scrollbar"></div>
+    <h2 class="reviews-title">Reviews</h2>
+    <div class="swiper" id="reviews-swiper">
+      <div id="notification" class="notification"></div>
+      <ul class="swiper-wrapper" id="slide"></ul>
+      <div class="reviews-slider">
+        <div class="swiper-button-prev">
+          <svg width="24" height="24" class="swiper-button-prev-icon">
+            <use href="./img/svg/arrow.svg#icon-arrow"></use>
+          </svg>
+        </div>
+        <div class="swiper-button-next">
+          <svg width="24" height="24" class="swiper-button-next-icon">
+            <use href="./img/svg/arrow.svg#icon-arrow"></use>
+          </svg>
+        </div>
+      </div>
     </div>
   </div>
 </section>
