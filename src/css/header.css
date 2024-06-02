@@ -84,7 +84,7 @@
   cursor: pointer;
 }
 
-@media (min-width: 360px) and (max-width: 1500px) {
+@media (min-width: 360px) and (max-width: 3000px) {
   .div-header {
     width: 360px;
     margin-right: auto;
@@ -95,7 +95,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1500px) {
+@media (min-width: 768px) and (max-width: 3000px) {
   .header-main  {
     height: 96px;
   }
@@ -138,6 +138,9 @@
 
 }
 
-@media (min-width: 1280px) and (max-width: 2100px) {
+@media (min-width: 1280px) and (max-width: 3000px) {
+  .div-header {
+    width: 1280px;
+  }
 
 }

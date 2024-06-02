@@ -41,6 +41,9 @@
 .profile-picture {
   display: none;
 }
+.profile-picture-span {
+  display: none;
+}
 
 .hero-div-button {
   display: flex;
@@ -140,7 +143,7 @@
 }
 
 
-@media (min-width: 360px) and (max-width: 2100px) {
+@media (min-width: 360px) and (max-width: 3000px) {
  
 .hero-content{
   width: 360px;
@@ -154,7 +157,7 @@
 }
 }
 
-@media (min-width: 768px) and (max-width: 2100px) {
+@media (min-width: 768px) and (max-width: 3000px) {
   .hero-section{
     height: 1032px;
   }
@@ -166,6 +169,7 @@
     height: 928px;
     padding-left: 32px; 
     padding-right: 32px;
+  
     padding-top: 88px;
     display: flex;
     align-items: flex-start;
@@ -219,6 +223,71 @@
   }
 }
 
-@media (min-width: 1280px) and (max-width: 2100px) {
+@media (min-width: 1280px) and (max-width: 3000px) {
 
+  .hero-section{
+    height: 908px;
+  }
+  .hero-content{
+    width: 1280px;
+  }
+  .hero-main-div {
+    width: 1280px;
+    height: 804px;
+    padding-top: 184px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .hero-h1 {
+    /* text-align: center; */
+}
+.profile-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px; 
+}
+.profile-picture-span {
+  display: flex;
+}
+.profile-picture {
+  display: flex;
+  background-color:#00B068;
+    width: 108px; 
+    height: 108px;
+    border-radius: 16px;
+}
+.fullstack-developer-span {
+  display: flex; 
+}
+
+
+.hero-div-for-dectop {
+  display: flex;
+  width: 100%;
+  gap: 136px;
+}
+
+  .hero-div-button {
+    display: flex;
+    width: 416px;
+    height: 96px;
+    margin-top: 80px;
+   
+    margin-bottom: 132px
+  }
+.hero-history-div {
+  width: 592px;
+  margin-right: auto;
+  margin-top: 80px;
+    margin-bottom: 132px;
+}
+
+  .hero-social-list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin: 40px auto 40px auto;
+  }
 }
