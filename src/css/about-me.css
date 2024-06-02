@@ -59,10 +59,18 @@
 		flex-direction: row;
 		gap: 32px;
 		justify-content: space-between;
-		padding-bottom: 140px;
+		padding-bottom: 60px;
+	}
+	.about-photo {
+		width: 336px;
 	}
 	.info-block {
 		width: 336px;
+		padding-top: 0;
+		margin-bottom: 0;
+	}
+	.about-content-photo {
+		margin-top: 368px;
 	}
 	.about-content-text {
 		display: flex;
@@ -70,10 +78,70 @@
 		gap: 32px;
 		justify-content: space-between;
 	}
-	.about-bg {
-		background-image: url(../img/decor-about-tablet-@1x.png);
-		background-position: center bottom -158px right;
+	.container.my-section-about {
+		background-image: url(../img/decor-about-@1x.png);
+		background-position: bottom 158px right 32px;
 		background-size: 336px 252px;
+		background-repeat: no-repeat;
+	}
+		@media (min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi),
+		(min-resolution: 2dppx) {
+			.container.my-section-about  {
+				background-image: url("../img/decor-about-2x.png");
+			}
+		}
+}
+/**--------------ABOUT-ME-DESKTOP--------------*/
+@media screen and (min-width: 1280px) {
+	.title {
+		margin-bottom: 48px;
+	}
+	.about-content-photo-description {
+		gap: 136px;
+		align-self: center;
+		padding-bottom: 80px;
+	}
+	.block-bio {
+		width: 488px;
+	}
+	.about-content-photo {
+		margin-top: 272px;
+		margin-left: 208px;
+		width: 384px;
+	}
+	.about-content-text {
+		gap: 136px;
+		margin-left: 208px;
+	}
+	.about-content-text {
+		justify-content: start;
+	}
+	.block-list {
+		width: 384px;
+	}
+	.about-description-title {
+		font-size: 36px;
+		line-height: 1.33333;
+		letter-spacing: 0.01em;
+	}
+	.about-photo {
+		width: 384px; 
+		height: auto;
+	}
+	.container.my-section-about {
+		background-image: url(../img/decor-about-@1x.png);
+		background-position: bottom 256px right 32px;
+		background-size: 384px 288px;
+		background-repeat: no-repeat;
 	}
 	
+	@media (min-device-pixel-ratio: 2),
+	(min-resolution: 192dpi),
+	(min-resolution: 2dppx) {
+	.container.my-section-about {
+	background-image: url("../img/decor-about-2x.png");
+	}
+	}
 }
+
