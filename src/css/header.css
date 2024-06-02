@@ -7,7 +7,7 @@
 .div-header {
   display: flex;
   gap: 24px;
-  min-width: 320px;
+  min-width: 360px;
   width: 100%;
   flex-direction: row;
   justify-content: space-between;
@@ -86,7 +86,7 @@
 
 @media (min-width: 360px) and (max-width: 1500px) {
   .div-header {
-    width: 320px;
+    width: 360px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -100,14 +100,14 @@
     height: 96px;
   }
   .div-header {
-    width: 704px;
+    width: 768px;
     gap: 0px
   }
   .header-logo {
-    margin: 32px auto 32px 32px;
+    margin : 32px auto 32px 32px;
   }
   .header-menu {
-    margin: 32px 32px 32px auto;
+    margin : auto;
   }
   .header-menu-title {
     display: none;
@@ -135,5 +135,9 @@
     line-height: 24px;
     letter-spacing: 0.5px;
   }
+
+}
+
+@media (min-width: 1280px) and (max-width: 2100px) {
 
 }

@@ -11,11 +11,12 @@
   display: flex;
   height: 736px;
   flex-direction: column;
-  min-width: 320px;
+  min-width: 360px;
   width: 100%;
   padding-left: 20px; 
+  padding-right: 20px;
   align-items: center; 
-  margin-top: 96px; 
+  padding-top: 112px; 
 }
 
 .hero-content {
@@ -60,11 +61,7 @@
   align-items: center;
 }
 
-.hero-button span {
-  display: flex;
-  align-items: center;
-  margin-right: 8px; 
-}
+
 
 .highlighted-text {
   background-color: #BCDFD1; 
@@ -79,12 +76,14 @@
   border-radius: 16px;
   width: 165px;
   height: 100%;
+  align-items: center;
 }
 
 .hero-history-div {
   margin-top: 40px; 
   margin-bottom: 72px; 
-  width: 320px;
+  width: 360px;
+  width: 100%;
 }
 
 .hero-history-p {
@@ -93,14 +92,9 @@
   font-weight: 400;
   letter-spacing: 0.5px;
   font-family: Poppins , sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 28px;
-  letter-spacing: 0.5px;
-  text-align: left;
-  
   background-color: #F0F0F0;
   color: #292929;
+  
 }
 
 .hero-history-p-span {
@@ -146,26 +140,85 @@
 }
 
 
-@media (min-width: 360px) and (max-width: 1500px) {
+@media (min-width: 360px) and (max-width: 2100px) {
  
 .hero-content{
-  width: 320px;
+  width: 360px;
     margin-right: auto;
     margin-left: auto;
 }
 .hero-main-div {
-  width: 320px;
+  width: 360px;
     margin-right: auto;
     margin-left: auto;
 }
 }
 
-@media (min-width: 768px) and (max-width: 1500px) {
+@media (min-width: 768px) and (max-width: 2100px) {
+  .hero-section{
+    height: 1032px;
+  }
   .hero-content{
-    width: 704px;
+    width: 768px;
   }
   .hero-main-div {
-    width: 704px;
-  
+    width: 768px;
+    height: 928px;
+    padding-left: 32px; 
+    padding-right: 32px;
+    padding-top: 88px;
+    display: flex;
+    align-items: flex-start;
   }
+  .hero-h1 {
+  font-family: Impact;
+  font-size: 136px;
+  font-weight: 400;
+  line-height: 156px;
+  letter-spacing: 1.8px;
+  }
+
+  .hero-div-button {
+    width: 416px;
+    height: 96px;
+    padding: 60px auto 40px auto;
+    margin-top: 60px;
+    display: flex;
+  }
+  
+.hero-button {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+.hero-div-span-for-style {
+    width: 261px;
+  }
+.hero-history-div {
+  width: 100%;
+  margin-top: 40px;
+    margin-bottom: 80px;
+  height: 96px;
+}
+.hero-history-p {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.5px;
+  }
+
+  .hero-social-list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin: 40px auto 40px auto;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 2100px) {
+
 }
