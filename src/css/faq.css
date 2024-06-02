@@ -1,0 +1,146 @@
+.faq-header {
+    font-family: 'Impact', sans-serif;
+    font-size: 52px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.faq-header-question {
+    color: #00B068;
+}
+
+.accordion-container {
+    max-width: 320px;
+}
+
+.ac {
+    border-bottom: 1px solid white;
+
+}
+
+.ac-header {
+    display: flex;
+    background-color: white;
+    border-radius: 16px 16px 16px 16px;
+    padding: 28px 16px 28px 24px;
+    transition: background-color 0.3s;
+}
+
+.ac-svg {
+    margin-left: auto;
+    transition: transform 0.3s;
+}
+
+.ac-svg.rotate {
+    transform: rotate(180deg);
+}
+
+.ac-trigger {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: black; /* Змінили колір тексту на чорний */
+    background-color: transparent; /* Уточнили, що фон повинен бути прозорим */
+    width: 100%;
+    text-align: left;
+}
+
+.ac-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    border-radius: 16px 16px 16px 16px;
+    color: white;
+}
+
+.ac-text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: black;
+    padding: 0 24px 28px;
+}
+
+.ac-panel.open {
+    max-height: 100%;
+}
+
+.ac.open {
+    border-bottom: none;
+}
+
+@media screen and (min-width: 768px) {
+    .faq-header {
+        font-size: 108px;
+        line-height: 1.15;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        margin-bottom: 60px;
+        max-width: 372px;
+    }
+
+    .accordion-container {
+        max-width: 704px;
+    }
+
+    .ac {
+        border-bottom: 1px solid rgb(238, 237, 237, 0.2);
+    }
+
+    .ac-trigger {
+        font-size: 20px;
+        line-height: 1.6;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: black; /* Змінили колір тексту на чорний */
+        background-color: white; /* Змінили колір фону кнопки на білий */
+        width: 100%;
+        text-align: left;
+    }
+
+    .ac-panel {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+        border-radius: 0 0 20px 20px;
+        color: #FFF;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .faq-background {
+        background-image: url(../img/decor-bg-4-min.png);
+        width: 526px;
+        height: 408px;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+        .hero-container {
+            background-image: url(../img/decor-bg-4-min.png);
+        }
+    }
+
+    .faq {
+        display: flex;
+        gap: 104px;
+    }
+
+    .faq-header {
+        padding-bottom: 190px;
+    }
+
+    .accordion-container {
+        padding-top: 276px;
+    }
+
+    .faq-header {
+        margin-bottom: 60px;
+    }
+}
