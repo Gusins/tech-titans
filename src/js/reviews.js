@@ -24,14 +24,14 @@ const swiper = new Swiper('#reviews-swiper', {
       slidesPerView: 1,
       spaceBetween: 10,
     },
-    991: {
+    1279: {
       slidesPerView: 2,
       spaceBetween: 32,
     },
   },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-prev',
+    prevEl: '.swiper-button-next',
   },
 });
 const slider = document.querySelector('.swiper-wrapper');
