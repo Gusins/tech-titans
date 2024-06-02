@@ -166,3 +166,17 @@ section:first-child {
 		margin: 0 auto;
 	}
 }
+/* desktop */
+@media only screen and (min-width: 1280px) {
+	section {
+		padding-top: 164px;
+	}
+	section:last-child {
+		padding-bottom: 164px;
+		padding-top: 0px;
+	}
+	.container {
+		max-width: calc(1216px + (32px * 2));
+		margin: 0 auto;
+	}
+}

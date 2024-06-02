@@ -156,18 +156,6 @@
 
 /* desktop */
 @media only screen and (min-width: 1280px) {
-	section {
-		padding-top: 124px;
-	}
-	section:last-child {
-		padding-bottom: 124px;
-		padding-top: 0px;
-	}
-	.container {
-		max-width: calc(1216px + (32px * 2));
-		padding: 0 32px;
-		margin: 0 auto;
-	}
 	.form {
 		width: 592px;
 	}
