@@ -8,88 +8,89 @@
 	<title>Vanilla App Template</title>
 	
   <script type="module" crossorigin src="/tech-titans/commonHelpers.js"></script>
-  <link rel="modulepreload" crossorigin href="/tech-titans/assets/vendor-da0e6cd1.js">
-  <link rel="stylesheet" href="/tech-titans/assets/vendor-ed6a6904.css">
-  <link rel="stylesheet" href="/tech-titans/assets/index-7445546b.css">
+  <link rel="modulepreload" crossorigin href="/tech-titans/assets/vendor-1c96f17f.js">
+  <link rel="stylesheet" href="/tech-titans/assets/vendor-e5212ee8.css">
+  <link rel="stylesheet" href="/tech-titans/assets/index-5f04a27b.css">
 </head>
 
 <body>
 	<header class="header-main">
-	<div class="div-header">
-	  <div class="header-logo">
-		<p class="header-logo-p">LLOYD<span class="header-logo-span">JEFFERSON.</span></p>
-	  </div>
-  
-	  <div class="header-menu">
-		<div class="header-menu-title">
-		  <button id="openModalBtn" class="burger-menu">
-			<svg width="24" height="24" viewBox="0 0 24 24">
-				<path d="M3 6h18M3 12h18M3 18h18" stroke="black" stroke-width="2" stroke-linecap="round"/>
-			  </svg>
-		</button>
-			
+	<div class="div-header container">
+		<div class="header-logo">
+			<p class="header-logo-p">LLOYD<span
+					class="header-logo-span">JEFFERSON.</span></p>
 		</div>
-		<div class="header-menu-div">
-			<ul class="header-menu-items">
-				<li class="header-menu-li"><a href="#about-me">About me</a></li>
-				<li class="header-menu-li"><a href="#about-me">Projects</a></li>
-				<li class="header-menu-li"><a href="#about-me">Contacts</a></li>
-			</ul>
-		 </div>
-	  </div>
+
+		<div class="header-menu">
+			<div class="header-menu-title">
+				<button class="burger button-reset js-open-menu" aria-expanded="false"
+					aria-controls="mobile-menu">
+					<div class="burger-line burger-line-first"></div>
+					<div class="burger-line burger-line-second"></div>
+					<div class="burger-line burger-line-third"></div>
+					<div class="burger-line burger-line-fourth"></div>
+				</button>
+				</svg>
+				</button>
+
+			</div>
+			<nav class="header-menu-div">
+				<ul class="header-menu-items">
+					<li class="header-menu-li"><a href="#about-me">About me</a></li>
+					<li class="header-menu-li"><a href="#projects">Projects</a></li>
+					<li class="header-menu-li"><a href="#contacts">Contacts</a></li>
+				</ul>
+			</nav>
+		</div>
 	</div>
-  </header>
-  
+</header>
 	<main class="main">
 		<section class="hero-section">
-    <div class="hero-main-div">
-        <div class="hero-content">
-            <h1 class="hero-h1">
-                <span class="profile-row">
-                    <span class="profile-hello-span">HELLO, I AM</span>
-                    <span class="profile-picture-span">
-                        <img src="#" alt="Profile Picture" class="profile-picture">
-                    </span>
-                </span>
-                <span class="fullstack-developer-span">FULLSTACK DEVELOPER</span>
-            </h1>
-            
-        </div>
+	<div class="container">
+		<h1 class="hero-h1">
+			<span class="profile-row">
+				<span class="profile-hello-span">HELLO, I AM</span>
+				<span class="profile-picture-span">
+					<img
+						srcset="../img/smallPortrait@1x.png 1x, ../img/smallPortrait@2x.png 2x"
+						loading="lazy" src="../img/smallPortrait@1x.png"
+						alt="Profile Picture" class="profile-picture">
+				</span>
+			</span>
+			<span class="fullstack-developer-span">FULLSTACK DEVELOPER</span>
+		</h1>
 
-        <div class="hero-div-for-dectop">
-            <div class="hero-div-button">
-                <button class="hero-button">
-                    <!-- <span>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM11 17H13V13H17V11H13V7H11V11H7V13H11V17Z" fill="currentColor"/>
-                        </svg>
-                    </span> -->
-                    ORDER THE 
-                    <span class="hero-div-span-for-style">&nbsp;PROJECT</span>
-                </button>
-            </div>
+		<div class="hero-div-for-dectop">
+			<a href="#contacts" class="hero-button">
+				<img src="../img/svg/arrow.svg">
+				Order the project </a>
 
-            <div class="hero-history-div">
-                <p class="hero-history-p">I WORK WITH PEOPLE ALL OVER THE WORLD TO CREATE 
-                    <span class="hero-history-p-span">IMPRESSIVE</span> AND 
-                    <span class="hero-history-p-span">FUNCTIONAL WEBSITES</span> 
-                    THAT REFLECT EACH CLIENT'S UNIQUE PERSONALITY.
-                </p>
-            </div>
-        </div>
-    </div>
+			<p class="hero-history">I WORK WITH PEOPLE ALL OVER THE
+				WORLD TO
+				CREATE
+				<span class="hero-history-accent">IMPRESSIVE</span> AND
+				<span class="hero-history-accent">FUNCTIONAL WEBSITES</span>
+				THAT REFLECT EACH CLIENT'S UNIQUE PERSONALITY.
+			</p>
+		</div>
+	</div>
 
- 
 
-    <div class="hero-social-div">
-        <ul class="hero-social-list">
-            <li class="hero-social-li"><a href="https://www.instagram.com/goitclub/">Instagram</a></li>
-            <li class="hero-social-li"><a href="https://www.facebook.com/goITclub/">Facebook</a></li>
-            <li class="hero-social-li"><a href="https://www.youtube.com/c/GoIT">YouTube</a></li>
-            <li class="hero-social-li"><a href="https://fovardell.github.io/tech-titans/">GitHub</a></li>
-        </ul>
-        
-    </div>
+
+	<div class="hero-social-div">
+		<ul class="hero-social-list">
+			<li class="hero-social-li"><a href="https://www.instagram.com/goitclub/"
+					target="_blank" та rel="noopener noreferrer">Instagram</a></li>
+			<li class="hero-social-li"><a href="https://www.facebook.com/goITclub/"
+					target="_blank" та rel="noopener noreferrer">Facebook</a></li>
+			<li class="hero-social-li"><a href="https://www.youtube.com/c/GoIT"
+					target="_blank" та rel="noopener noreferrer">YouTube</a></li>
+			<li class="hero-social-li"><a
+					href="https://github.com/Fovardell/tech-titans" target="_blank" та
+					rel="noopener noreferrer">GitHub</a></li>
+		</ul>
+
+	</div>
 
 </section>
 		<section id="about-me">
@@ -212,7 +213,7 @@
 		</div>
 	</div>
 </section>
-		<section class="my-projects">
+		<section class="my-projects" id="projects">
 	<div class="container">
 		<p>
 			my projects
@@ -288,7 +289,7 @@
 		</p>
 	</div>
 </section>
-		<section class="work-together">
+		<section class="work-together" id="contacts">
 	<div class="container">
 		<h2 class="title">
 			let’s<span class="title-accent">work together</span>
@@ -357,8 +358,24 @@
 		</p>
 	</div>
 </div>
-	<div class="mobile-menu is-hidden">
-	<p>mobile menu</p>
+	<div class="menu-container js-menu-container " id="mobile-menu">
+	<ul class="navigation-mobile-list menu-items-opens">
+		<li class="navigation-items hero-social-li">
+			<a href="#about-me" class="menu-box-link">
+				About me
+			</a>
+		</li>
+		<li class="navigation-items hero-social-li">
+			<a href="#projects" class="menu-box-link">
+				Projects
+			</a>
+		</li>
+		<li class="navigation-items hero-social-li">
+			<a href="#contacts" class="menu-box-link">
+				Contacts
+			</a>
+		</li>
+	</ul>
 </div>
 	
 </body>
