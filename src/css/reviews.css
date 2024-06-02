@@ -15,22 +15,18 @@
   font-family: 'Impact', sans-serif;
   font-weight: 400;
   font-size: 52px;
-  line-height: 1.23077;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: #292929;
   text-align: center;
   margin-bottom: 40px;
 }
 .swiper-slide {
-  border-radius: 16px;
-  padding: 32px;
-  background-color: var(--light-grey);
-
-  min-height: 224px;
   display: flex !important;
   flex-direction: column;
   justify-content: space-between;
+  min-height: 224px;
+  border-radius: 16px;
+  padding: 32px;
+  background-color: var(--light-grey);
 }
 .swiper-text {
   font-family: 'Poppins', sans-serif;
@@ -48,16 +44,14 @@
 }
 .swiper-img-title {
   display: flex;
+  align-items: center;
   gap: 16px;
-  height: 40px;
 }
 .swiper-title {
-  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: #292929;
   padding: 8px 0 8px;
 }
 .reviews-slider {
