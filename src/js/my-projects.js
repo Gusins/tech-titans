@@ -1,10 +1,10 @@
-// TODO: добавити посилання на зображення проектів, та їх назви в масив, та додавати по  3 штуки по кліку load more, зробити перевірку, якщо зображень в масиві немає - не відображати кнопку load more. Добавити transition, щоб анімувати виїзд проектів.
+
 import wallet from "../img/my-projects/wallet.jpg";
 import wallet2 from "../img/my-projects/wallet-2x.jpg";
 import green from "../img/my-projects/green.jpg";
 import green2 from "../img/my-projects/green-2x.jpg";
-import english from "../img/my-projects/green.jpg";
-import english2 from "../img/my-projects/green-2x.jpg";
+import english from "../img/my-projects/english.jpg";
+import english2 from "../img/my-projects/english-2x.jpg";
 import power from "../img/my-projects/power.jpg";
 import power2 from "../img/my-projects/power-2x.jpg";
 import mimino from "../img/my-projects/mimino.jpg";
@@ -13,13 +13,13 @@ import vyshyvanka from "../img/my-projects/vyshyvanka.jpg";
 import vyshyvanka2 from "../img/my-projects/vyshyvanka-2x.jpg";
 import chego from "../img/my-projects/chego.jpg";
 import chego2 from "../img/my-projects/chego-2x.jpg";
-import energy from "../img/my-projects/chego.jpg";
-import energy2 from "../img/my-projects/chego-2x.jpg";
+import energy from "../img/my-projects/energy.jpg";
+import energy2 from "../img/my-projects/energy-2x.jpg";
 import fruit from "../img/my-projects/fruit.jpg";
 import fruit2 from "../img/my-projects/fruit-2x.jpg";
 import starlight from "../img/my-projects/starlight.jpg";
 import starlight2 from "../img/my-projects/starlight-2x.jpg";
-import arrowSvg from "../img/svg/spriteForEachOpt.svg#MyProjectVector";
+import arrowSvg from "../img/svg/spriteForEachOpt.svg";
 const projects = [
 	{
 		img: {
@@ -123,15 +123,7 @@ const projects = [
 	}
 ];
 
-const projectsPerLoad = 3;
-let currentIndex = 0;
-
-const refs = {
-	projectsList: document.querySelector('.projects-list'),
-	loadMoreBtn: document.querySelector('.projects-load')
-};
-
-const createProjectMarkup = function (project) {
+function createProjectMarkup(project) {
 	return `<li class="my-projects-card">
     <img class="my-projects-card-img" srcset="${project.img.srcset}" src="${project.img.src}" alt="${project.img.alt}" />
     <p class="my-projects-card-stack">${project.stack}</p>
@@ -140,13 +132,19 @@ const createProjectMarkup = function (project) {
       <a class="projects-card-link" href="${project.link}" target="_blank">
         <span class="projects-card-link-span">VISIT</span>
         <svg class="projects-card-link-svg" width="24" height="24">
-          <use href="${arrowSvg}"></use>
+          <use href="${arrowSvg}#MyProjectVector"></use>
         </svg>
       </a>
     </div>
   </li>`;
 };
-
+const projectsPerLoad = 3;
+let currentIndex = 0;
+const refs = {
+	projectsList: document.querySelector('.projects-list'),
+	loadMoreBtn: document.querySelector('.projects-load')
+};
+``;
 const loadProjects = function () {
 	const projectsToLoad = projects.slice(currentIndex, currentIndex + projectsPerLoad);
 	const markup = projectsToLoad.map(createProjectMarkup).join('');
