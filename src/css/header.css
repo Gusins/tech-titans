@@ -62,6 +62,23 @@
 	cursor: pointer;
 }
 
+.header-menu-a {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: var(--black);
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.header-menu-a:hover,
+.header-menu-a:focus {
+    color: #00B068; 
+}
+
+
+
 @media (min-width: 768px) {
 	.div-header {
 		padding-top: 32px;
@@ -88,12 +105,5 @@
 		text-transform: uppercase;
 		color: var(--black);
 	}
-	.header-menu-li {
-		font-family: var(--font-family);
-		font-weight: 300;
-		font-size: 16px;
-		line-height: 1.5;
-		letter-spacing: 0.03em;
-		color: var(--black);
-	}
+	
 }

@@ -34,30 +34,29 @@
 }
 
 .hero-button {
-	font-family: var(--font-family);
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 1.56;
-	letter-spacing: 0.03em;
-	text-transform: uppercase;
-	color: var(--black);
-
-	padding: 0px;
-	margin-top: 40px;
-	border: none;
-	display: flex;
-	align-items: center;
-	gap: 12px;
-	width: 100%;
-	height: 92px;
-	background: transparent;
-
-	position: relative;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--black);
+    padding: 0px;
+    margin-top: 40px;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    height: 92px;
+    background: transparent;
+    position: relative; 
 }
-.burron-text {
-	position: relative;
-	z-index: 2;
+
+.button-text {
+    transition: background-color 0.3s ease, color 0.3s ease; 
 }
+
 .hero-button::after {
 	content: "";
 	position: absolute;
@@ -68,7 +67,16 @@
 	height: 100%;
 	border-radius: 16px;
 	background: rgba(0, 176, 104, 0.2);
+	transition: background-color 0.3s ease; 
 }
+.hero-button:focus::after {
+    background-color: #00B06899;
+}
+
+.hero-button:hover::after {
+    background-color: #00B06899; 
+}
+
 .hero-history {
 	margin-top: 40px;
 	font-family: var(--font-family);
@@ -110,11 +118,20 @@
 	height: 100%;
 }
 
+@media (min-width: 200px) and (max-width: 768px) {
+    .hero-button::after {
+        width: 200px;
+    }
+}
+
 @media (min-width: 768px) {
 	.hero-h1 {
+		font-family: Impact;
 		font-size: 136px;
-		line-height: 1.15;
-		letter-spacing: 0.01em;
+		font-weight: 400;
+		line-height: 156px;
+		letter-spacing: 1.7999999523162842px;
+		text-align: left;
 	}
 	.hero-div-for-dectop {
 		margin-top: 60px;
@@ -144,6 +161,7 @@
 		flex-direction: row;
 		gap: 40px;
 	}
+	
 
 	.hero-section > .container {
 		padding-top: 88px;
@@ -167,6 +185,9 @@
 		justify-content: flex-start;
 		gap: 40px;
 	}
+	.hero-h1 {
+		letter-spacing: 5px;
+	}
 	.hero-section > .container {
 		padding-bottom: 132px;
 		padding-top: 168px;
@@ -183,6 +204,7 @@
 	}
 	.fullstack-developer-span {
 		display: flex;
+		letter-spacing: 10.735px;
 	}
 
 	.hero-div-for-dectop {
