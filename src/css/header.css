@@ -9,7 +9,7 @@
 
 .header-logo {
 	font-size: 24px;
-	color: #292929;
+	color: var(--black);
 	line-height: 24px;
 	letter-spacing: 1.5px;
 }
@@ -25,7 +25,7 @@
 }
 
 .header-logo-span {
-	color: #00b068;
+	color: var(--accet-green);
 }
 
 .header-menu {
@@ -105,5 +105,19 @@
 		text-transform: uppercase;
 		color: var(--black);
 	}
-	
+
+	.header-menu-li {
+		font-family: var(--font-family);
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 1.5;
+		letter-spacing: 0.03em;
+		color: var(--black);
+	}
+	.header-menu-li > a {
+		transition: color var(--default-animation);
+	}
+	.header-menu-li > a:hover {
+		color: var(--accet-green);
+	}
 }

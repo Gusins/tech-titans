@@ -67,14 +67,11 @@
 	height: 100%;
 	border-radius: 16px;
 	background: rgba(0, 176, 104, 0.2);
-	transition: background-color 0.3s ease; 
-}
-.hero-button:focus::after {
-    background-color: #00B06899;
-}
 
+	transition: background var(--default-animation);
+}
 .hero-button:hover::after {
-    background-color: #00B06899; 
+	background: rgba(0, 176, 104, 0.6);
 }
 
 .hero-history {
@@ -108,7 +105,18 @@
 	align-items: center;
 	gap: 24px;
 }
-
+.hero-social-li {
+	font-weight: 300;
+	line-height: 150%;
+	letter-spacing: 0.03em;
+	color: var(--black);
+}
+.hero-social-li > a {
+	transition: color var(--default-animation);
+}
+.hero-social-li > a:hover {
+	color: var(--accet-green);
+}
 .menu-items-div {
 	display: flex;
 	flex-direction: column;

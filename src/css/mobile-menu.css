@@ -79,3 +79,32 @@ body.modal-open {
 .navigation-items:not(:last-child) {
 	margin-bottom: 24px;
 }
+.menu-box-link {
+	position: relative;
+}
+.menu-box-link::after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 2px;
+	background-color: var(--accet-green);
+	bottom: -5px;
+	left: 0;
+	transition: width var(--default-animation);
+}
+.menu-box-link::before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 2px;
+	background-color: var(--accet-green);
+	bottom: -5px;
+	right: 0;
+	transition: width var(--default-animation);
+}
+.menu-box-link:hover::before {
+	width: 50%;
+}
+.menu-box-link:hover::after {
+	width: 50%;
+}

@@ -117,6 +117,7 @@
 	margin-left: auto;
 	gap: 12px;
 	background-color: #e4e5e6;
+	transition: background-color var(--default-animation);
 }
 
 .projects-card-link:hover {
@@ -136,19 +137,21 @@
 }
 
 .projects-load {
+	font-size: 18px;
+	line-height: 1.56;
+	letter-spacing: 0.03em;
+	color: var(--black);
+
 	margin: 0 auto;
 	display: flex;
 	padding: 12px 24px;
-	color: inherit;
-	font-size: 18px;
-	line-height: 1.55;
-	letter-spacing: 0.3em;
 	text-transform: uppercase;
 	background-color: transparent;
 	position: relative;
 	border: none;
 	cursor: pointer;
-	transition: background-color 0.2s ease-in-out;
+
+	transition: color var(--default-animation);
 	margin-top: 52px;
 
 	@media screen and (min-width: 768px) {
@@ -164,16 +167,16 @@
 
 .projects-load::after {
 	content: "";
+	background-color: var(--accet-green);
 	position: absolute;
-	width: 100%;
-	height: 1px;
-	background-color: #14c57c;
-	bottom: -5px;
-	left: 0;
+	width: 120px;
+	height: 2px;
+	bottom: 10px;
+	left: 50%;
+	transform: translate(-50%, 0);
 	animation: expand-width 2s infinite;
 }
 
 .projects-load:hover {
-	color: #00b068;
-	background-color: #bbb;
+	color: var(--accet-green);
 }

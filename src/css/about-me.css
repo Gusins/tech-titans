@@ -9,7 +9,7 @@
 	letter-spacing: 0.02em;
 	text-transform: uppercase;
 	color: var(--black);
-	padding-bottom: 32px;
+	margin-bottom: 32px;
 }
 .block-bio {
 	padding-top: 40px;
@@ -92,6 +92,10 @@
 }
 /**--------------ABOUT-ME-DESKTOP--------------*/
 @media screen and (min-width: 1280px) {
+	.container.my-section-about {
+		margin-left: 0;
+		margin-right: 0;
+	}
 	.title {
 		margin-bottom: 48px;
 	}
@@ -106,13 +110,13 @@
 	.about-content-photo {
 		margin-top: 272px;
 		margin-left: 208px;
-		width: 384px;
 	}
 	.about-content-text {
-		justify-content: end;
 		gap: 136px;
 	}
-
+	.about-content-text {
+		justify-content: start;
+	}
 	.block-list {
 		width: 384px;
 	}
@@ -122,8 +126,11 @@
 		letter-spacing: 0.01em;
 	}
 	.about-photo {
-		width: 384px;
+		width: 384px; 
 		height: auto;
+	}
+	.about-content-text {
+		margin-left: 208px;
 	}
 	.container.my-section-about {
 		background-image: url("/img/decor-about-@1x.png");

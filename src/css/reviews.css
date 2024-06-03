@@ -1,4 +1,107 @@
 .reviews {
 }
+.swiper {
+  width: 100%;
+  height: 100% !important;
+  position: relative !important;
+}
 .container {
+}
+.swiper-wrapper {
+  height: auto !important;
+  align-items: stretch !important;
+  box-sizing: border-box !important;
+}
+.reviews-title {
+  font-family: 'Impact', sans-serif;
+  font-weight: 400;
+  font-size: 52px;
+  color: #292929;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.swiper-slide {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 224px;
+  border-radius: 16px;
+  padding: 32px;
+  background-color: var(--light-grey);
+}
+.swiper-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #292929;
+  margin-bottom: 24px;
+}
+.swiper-img {
+  border-radius: 24px;
+  width: 40px;
+  height: 40px;
+}
+.swiper-img-title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.swiper-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  padding: 8px 0 8px;
+}
+.reviews-slider {
+  margin-top: 24px;
+  display: flex;
+  gap: 16px;
+  justify-content: end;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  position: relative !important;
+  margin-top: 0 !important;
+  border: 1px solid var(--reviews-slider-btn-border);
+  border-radius: 8px;
+  padding: 12px;
+  width: 40px;
+  height: 40px;
+  background-color: aqua;
+}
+.swiper-button-prev {
+  transform: rotate(180deg);
+}
+.swiper-button {
+  flex-shrink: 0;
+  fill: black;
+  stroke: var(--text);
+}
+.notification {
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  color: red;
+}
+.slider-error-text {
+  margin: 0 auto;
+  font-size: 24px;
+}
+@media screen and (min-width: 1280px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 48px;
+    height: 48px;
+    outline: none;
+    cursor: pointer;
+  }
+  .swiper-button-next:focus,
+  .swiper-button-prev:focus,
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    background: #e4e5e6;
+  }
 }
