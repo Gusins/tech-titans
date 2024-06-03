@@ -8,17 +8,13 @@
 		openMenuBtn.classList.toggle('burger-active');
 		mobileMenu.classList.toggle('is-open');
 		document.body.classList.toggle('modal-open');
-		const scrollLockMethod = !isMenuOpen
-			? 'disableBodyScroll'
-			: 'enableBodyScroll';
-		bodyScrollLock[scrollLockMethod](mobileMenu);
+
 	};
 	openMenuBtn.addEventListener('click', toggleMenu);
 	window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
 		if (!e.matches) return;
 		mobileMenu.classList.remove('is-open');
 		openMenuBtn.setAttribute('aria-expanded', false);
-		bodyScrollLock.enableBodyScroll(mobileMenu);
 	});
 	for (let smoothLink of smoothLinks) {
 		smoothLink.addEventListener('click', function (e) {
