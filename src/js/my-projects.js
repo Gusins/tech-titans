@@ -1,9 +1,9 @@
 // TODO: добавити посилання на зображення проектів, та їх назви в масив, та додавати по  3 штуки по кліку load more, зробити перевірку, якщо зображень в масиві немає - не відображати кнопку load more. Добавити transition, щоб анімувати виїзд проектів.
-
+import a from "../img/my-projects/chego-2x.jpg";
 const projects = [
 	{
 		img: {
-			src: '/img/my-projects/wallet.jpg',
+			src: a,
 			srcset: '/img/my-projects/wallet.jpg 1x, /img/my-projects/wallet-2x.jpg 2x',
 			alt: 'wallet webservice'
 		},
