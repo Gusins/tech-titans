@@ -1,3 +1,6 @@
+.about-content-photo-description {
+	padding-bottom: 40px;
+}
 .about-description-title {
 	font-family: var(--font-family);
 	font-weight: 500;
@@ -6,20 +9,30 @@
 	letter-spacing: 0.02em;
 	text-transform: uppercase;
 	color: var(--black);
-	margin-bottom: 32px;
+	padding-bottom: 32px;
+}
+.block-bio {
+	padding-top: 40px;
 }
 
 .about-description-text {
-	margin-bottom: 24px;
+	padding-bottom: 24px;
+}
+
+.about-description-text:last-child {
+	padding-bottom: 0;
 }
 
 .about-edu-item {
 	padding-left: 32px;
-	margin-bottom: 12px;
+	padding-bottom: 12px;
 	position: relative;
 }
 .about-edu-item.about-edu-item-role {
 	padding-left: 24px;
+}
+.about-edu-list li:last-child {
+	padding-bottom: 0;
 }
 .about-edu-item.about-edu-item-role::before {
 	left: 6px;
@@ -38,4 +51,90 @@
 	height: 4px;
 	border-radius: 1px;
 	background: var(--accet-green);
+}
+/**--------------ABOUT-ME-TABLET--------------*/
+@media screen and (min-width: 768px) {
+	.about-content-photo-description {
+		display: flex;
+		flex-direction: row;
+		gap: 32px;
+		justify-content: space-between;
+		padding-bottom: 60px;
+	}
+	.about-photo {
+		width: 336px;
+	}
+	.info-block {
+		width: 336px;
+		padding-top: 0;
+		margin-bottom: 0;
+	}
+	.about-content-photo {
+		margin-top: 368px;
+	}
+	.about-content-text {
+		display: flex;
+		flex-direction: row;
+		gap: 32px;
+		justify-content: space-between;
+	}
+	.container.my-section-about {
+		background-image: url("/img/decor-about-@1x.png");
+		background-position: bottom 158px right 32px;
+		background-size: 336px 252px;
+		background-repeat: no-repeat;
+	}
+	@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+		.container.my-section-about {
+			background-image: url("/img/decor-about-2x.png");
+		}
+	}
+}
+/**--------------ABOUT-ME-DESKTOP--------------*/
+@media screen and (min-width: 1280px) {
+	.title {
+		margin-bottom: 48px;
+	}
+	.about-content-photo-description {
+		gap: 136px;
+		align-self: center;
+		padding-bottom: 80px;
+	}
+	.block-bio {
+		width: 488px;
+	}
+	.about-content-photo {
+		margin-top: 272px;
+		margin-left: 208px;
+		width: 384px;
+	}
+	.about-content-text {
+		justify-content: end;
+		gap: 136px;
+	}
+
+	.block-list {
+		width: 384px;
+	}
+	.about-description-title {
+		font-size: 36px;
+		line-height: 1.33333;
+		letter-spacing: 0.01em;
+	}
+	.about-photo {
+		width: 384px;
+		height: auto;
+	}
+	.container.my-section-about {
+		background-image: url("/img/decor-about-@1x.png");
+		background-position: bottom 256px right 32px;
+		background-size: 384px 288px;
+		background-repeat: no-repeat;
+	}
+
+	@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+		.container.my-section-about {
+			background-image: url("/img/decor-about-2x.png");
+		}
+	}
 }

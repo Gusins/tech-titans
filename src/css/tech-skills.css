@@ -1,4 +1,129 @@
 .tech-skills {
+	margin: 0 auto;
 }
-.container {
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+.marquee__inner {
+	display: flex;
+	gap: 56px;
+	margin: 0 auto;
+}
+.tech-skills-line {
+	position: relative;
+	display: flex;
+	gap: 56px;
+	padding: 32px 0px;
+	height: 104px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.tech-skills-line.green {
+	background: var(--light-accent);
+	z-index: 2;
+}
+
+.tech-skills-line.gray {
+	z-index: 1;
+	margin: 0;
+	background: var(--light-grey);
+	transform: rotate(2deg);
+	top: 5px;
+}
+
+.tech-skills-list {
+	display: flex;
+	justify-content: center;
+	gap: 56px;
+	margin: 0 auto;
+	white-space: nowrap;
+	animation-duration: 7s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.tech-skills-list.green {
+	animation-name: marqueeLineForward;
+	animation-direction: alternate;
+}
+
+.tech-skills-list.gray {
+	animation-name: marqueeLineForward;
+	animation-direction: alternate-reverse;
+}
+
+.tech-skills-list-item {
+	display: inline-block;
+	font-family: var(--font-family);
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 125%;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.tech-skills-list-item:not(:first-child):before {
+	position: absolute;
+	content: "";
+	left: -32px;
+	top: 16px;
+	border-radius: 2px;
+	width: 8px;
+	height: 8px;
+}
+
+.tech-skills-list-item.green:not(:first-child):before {
+	background: var(--accet-green);
+}
+
+.tech-skills-list-item.gray:not(:first-child):before {
+	background: var(--black);
+}
+
+.tech-skills-list-item.green {
+	color: var(--black);
+}
+
+.tech-skills-list-item.gray {
+	color: var(--accet-green);
+}
+
+@keyframes marqueeLineForward {
+	from {
+		transform: translateX(0%);
+	}
+
+	to {
+		transform: translateX(-100%);
+	}
+}
+
+@media all and (min-width: 768px) {
+	.tech-skills-line {
+		padding: 40px 0px;
+		height: 128px;
+	}
+
+	.tech-skills-list-item {
+		font-weight: 500;
+		font-size: 36px;
+		line-height: 133%;
+		letter-spacing: 0.01em;
+	}
+
+	.tech-skills-list-item:not(:first-child):before {
+		top: 20px;
+	}
 }

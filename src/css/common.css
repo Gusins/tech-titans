@@ -75,6 +75,7 @@ img {
 /* common styles */
 
 body {
+	font-family: var(--font-family);
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
@@ -162,6 +163,20 @@ section:first-child {
 	.container {
 		min-width: calc(704px + (32px * 2));
 		padding: 0 32px;
+		margin: 0 auto;
+	}
+}
+/* desktop */
+@media only screen and (min-width: 1280px) {
+	section {
+		padding-top: 164px;
+	}
+	section:last-child {
+		padding-bottom: 164px;
+		padding-top: 0px;
+	}
+	.container {
+		max-width: calc(1216px + (32px * 2));
 		margin: 0 auto;
 	}
 }
