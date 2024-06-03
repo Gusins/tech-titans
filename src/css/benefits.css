@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 
 .benefits-title {
   font-family: 'Impact', sans-serif;
@@ -21,6 +22,22 @@
   text-transform: uppercase;
   padding-top: 125px;
   margin-bottom: 40px;
+=======
+.benefits-title {
+  font-family: var(--second-family);
+  color: var(--black);
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.23;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  max-width: 320px;
+  margin-bottom: 40px;
+}
+
+.benefits-title span {
+  color: var(--accet-green);
+>>>>>>> Stashed changes
 }
 
 .benefits-title span {
@@ -56,20 +73,105 @@
   height: 24px;
   border-radius: 4px;
   stroke-width: 2px;
+<<<<<<< Updated upstream
   stroke: var(--accent-green);
 }
 
 .benefits-subtitle {
+=======
+  stroke: #00b068;
+}
+
+.benefits-subtitle {
+  font-family: var(--font-family);
+>>>>>>> Stashed changes
   font-weight: 400;
   font-size: 18px;
   letter-spacing: 0.03em;
   line-height: 1.5;
   text-transform: uppercase;
+<<<<<<< Updated upstream
   margin-bottom: 16px;
 }
 .benefits-item-text {
   color: var(--black);
   margin-bottom: 16px;
+=======
+  color: var(--black);
+
+  margin-bottom: 16px;
+}
+.benefits-item-text {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: var(--black);
+  max-width: 320px;
+}
+@media screen and (min-width: 768px) {
+  .benefits {
+    padding-top: 0;
+    padding-bottom: 124px;
+  }
+  .benefits-title {
+    max-width: 704px;
+    max-height: 372px;
+    margin-bottom: -20px;
+  }
+  .benefits-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 32px;
+  }
+  .benefits-list-item:nth-child(1) {
+    grid-column: 2;
+  }
+  .benefits-list-item:nth-child(2) {
+    grid-column: 1;
+  }
+  .benefits-list-item:nth-child(3) {
+    grid-column: 2;
+  }
+  .benefits-list-item:nth-child(4) {
+    grid-column: 1;
+  }
+
+  .benefits-subtitle {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  .benefits-item-text {
+    max-width: 336px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .benefits {
+    padding-bottom: 164px;
+  }
+  .benefits-title {
+    max-width: 681px;
+    margin-bottom: -96px;
+  }
+  .benefits-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .benefits-list-item:nth-child(1) {
+    grid-column: 3;
+  }
+  .benefits-list-item:nth-child(2) {
+    grid-column: 1;
+  }
+  .benefits-list-item:nth-child(3) {
+    grid-column: 2;
+  }
+  .benefits-list-item:nth-child(4) {
+    grid-column: 3;
+  }
+>>>>>>> Stashed changes
 }
 .benefits-item-text {
   font-family: var(--font-family);
