@@ -19,6 +19,7 @@ import fruit from "../img/my-projects/fruit.jpg";
 import fruit2 from "../img/my-projects/fruit-2x.jpg";
 import starlight from "../img/my-projects/starlight.jpg";
 import starlight2 from "../img/my-projects/starlight-2x.jpg";
+import arrowSvg from "../img/svg/spriteForEachOpt.svg#MyProjectVector";
 const projects = [
 	{
 		img: {
@@ -139,7 +140,7 @@ const createProjectMarkup = function (project) {
       <a class="projects-card-link" href="${project.link}" target="_blank">
         <span class="projects-card-link-span">VISIT</span>
         <svg class="projects-card-link-svg" width="24" height="24">
-          <use href="./img/svg/spriteForEachOpt.svg#MyProjectVector"></use>
+          <use href="${arrowSvg}"></use>
         </svg>
       </a>
     </div>
