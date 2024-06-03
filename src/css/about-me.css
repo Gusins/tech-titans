@@ -94,6 +94,10 @@
 }
 /**--------------ABOUT-ME-DESKTOP--------------*/
 @media screen and (min-width: 1280px) {
+	.container.my-section-about {
+		margin-left: 0;
+		margin-right: 0;
+	}
 	.title {
 		margin-bottom: 48px;
 	}
@@ -108,7 +112,6 @@
 	.about-content-photo {
 		margin-top: 272px;
 		margin-left: 208px;
-		width: 384px;
 	}
 	.about-content-text {
 		gap: 136px;
@@ -124,10 +127,6 @@
 		font-size: 36px;
 		line-height: 1.33333;
 		letter-spacing: 0.01em;
-	}
-	.about-photo {
-		width: 384px; 
-		height: auto;
 	}
 	.container.my-section-about {
 		background-image: url(../img/decor-about-@1x.png);
