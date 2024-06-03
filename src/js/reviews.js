@@ -1,6 +1,6 @@
-import axios, { Axios } from 'axios';
-import Swiper from 'swiper';
-import 'swiper/swiper-bundle.css';
+import Swiper from 'swiper/bundle';
+import 'swiper/css';
+import axios from 'axios';
 export * from './reviews';
 
 const fetchData = async function () {
@@ -17,28 +17,11 @@ const fetchData = async function () {
   }
 };
 
-const swiper = new Swiper('#reviews-swiper', {
-  autoHeight: true,
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 10,
-    },
-    1279: {
-      slidesPerView: 2,
-      spaceBetween: 32,
-    },
-  },
-  navigation: {
-    nextEl: '.swiper-button-prev',
-    prevEl: '.swiper-button-next',
-  },
-});
 const slider = document.querySelector('.swiper-wrapper');
 fetchData()
-  .then(reviews => {
-    const markup = reviews
-      .map(({ author, avatar_url, review }) => {
+  .then(el => {
+    const markup = el
+      .map(({ review, avatar_url, author }) => {
         return `
             <li class="swiper-slide">
                 <p class="swiper-text">${review}</p>
@@ -68,7 +51,24 @@ function errorMassage(message) {
   setTimeout(() => {
     notification.style.display = 'none';
     notification.style.margin = '0 auto';
-  }, 3000);
+  }, 10000);
 }
 
 fetchData();
+const swiper = new Swiper('.swiper', {
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    1279: {
+      slidesPerView: 2,
+      spaceBetween: 32,
+    },
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  autoHeight: true,
+});

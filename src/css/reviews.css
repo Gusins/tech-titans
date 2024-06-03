@@ -10,6 +10,7 @@
 .swiper-wrapper {
   height: auto !important;
   align-items: stretch !important;
+  box-sizing: border-box !important;
 }
 .reviews-title {
   font-family: 'Impact', sans-serif;
@@ -67,26 +68,22 @@
   border: 1px solid var(--reviews-slider-btn-border);
   border-radius: 8px;
   padding: 12px;
-  width: 40px !important;
-  height: 40px !important;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: aqua;
 }
 .swiper-button-prev {
   transform: rotate(180deg);
 }
-.swiper-button-prev svg,
-.swiper-button-next svg {
+.swiper-button {
   flex-shrink: 0;
-  fill: transparent;
+  fill: black;
   stroke: var(--text);
 }
 .notification {
+  font-size: 24px;
   display: flex;
-
-  align-items: center;
+  justify-content: center;
   color: red;
 }
 .slider-error-text {
@@ -96,9 +93,8 @@
 @media screen and (min-width: 1280px) {
   .swiper-button-next,
   .swiper-button-prev {
-    width: 48px !important;
-    height: 48px !important;
-    transition: background 0.4s ease;
+    width: 48px;
+    height: 48px;
     outline: none;
     cursor: pointer;
   }
@@ -106,6 +102,6 @@
   .swiper-button-prev:focus,
   .swiper-button-next:hover,
   .swiper-button-prev:hover {
-    background-color: var(--light-grey);
+    background: #e4e5e6;
   }
 }
