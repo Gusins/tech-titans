@@ -54,9 +54,14 @@
 
 	position: relative;
 }
+.burron-text {
+	position: relative;
+	z-index: 2;
+}
 .hero-button::after {
 	content: "";
 	position: absolute;
+	z-index: 1;
 	right: 0;
 	display: block;
 	width: 51%;
