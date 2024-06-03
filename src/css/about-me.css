@@ -9,7 +9,7 @@
 	letter-spacing: 0.02em;
 	text-transform: uppercase;
 	color: var(--black);
-	padding-bottom: 32px;
+	margin-bottom: 32px;
 }
 .block-bio{
 	padding-top: 40px;
@@ -114,11 +114,13 @@
 		margin-left: 208px;
 	}
 	.about-content-text {
+		justify-content: center;
 		gap: 136px;
 		margin-left: 208px;
 	}
 	.about-content-text {
 		justify-content: start;
+		width: 904px;
 	}
 	.block-list {
 		width: 384px;
