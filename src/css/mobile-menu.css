@@ -1,4 +1,110 @@
-.mobile-menu {
+body.modal-open {
+	overflow: hidden;
 }
-.is-hidden {
+.menu-container {
+	transform: translatex(100%);
+	transition: transform cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+
+	position: fixed;
+	top: 50px;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--white);
+	background-image: url("../img/hero-mobile-background@1x.png");
+	background-position: top 16px right 50%;
+	background-repeat: no-repeat;
+	background-size: 320px 704px;
+	z-index: 999;
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+	.menu-container {
+		background-image: url("../img/hero-mobile-background@2x.png");
+	}
+}
+
+.menu-container.is-open {
+	transform: translatex(0);
+}
+
+.burger {
+	width: 20px;
+	height: 14px;
+	position: relative;
+	padding: 0;
+	align-self: center;
+	border: none;
+	background-color: transparent;
+}
+.burger-line {
+	height: 2px;
+	border-radius: 2px;
+	background-color: var(--black);
+	position: absolute;
+	left: 0;
+	transition: all 250ms linear;
+}
+.burger-line-first {
+	width: 20px;
+	top: 0;
+}
+.burger-line-second,
+.burger-line-third {
+	width: 20px;
+	top: 50%;
+	transform: translatey(-50%);
+}
+.burger-line-fourth {
+	width: 20px;
+	bottom: 0;
+}
+.burger-active .burger-line-first,
+.burger-active .burger-line-fourth {
+	opacity: 0;
+}
+.burger-active .burger-line-second {
+	transform: translatey(-50%) rotate(45deg);
+}
+.burger-active .burger-line-third {
+	transform: translatey(-50%) rotate(-45deg);
+}
+.navigation-mobile-list {
+	font-weight: 300;
+	line-height: 1.5;
+	letter-spacing: 0.03em;
+	text-align: center;
+	margin: 276px 0px 0px 0px;
+	color: var(--black);
+}
+.navigation-items:not(:last-child) {
+	margin-bottom: 24px;
+}
+.menu-box-link {
+	position: relative;
+}
+.menu-box-link::after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 2px;
+	background-color: var(--accet-green);
+	bottom: -5px;
+	left: 0;
+	transition: width var(--default-animation);
+}
+.menu-box-link::before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 2px;
+	background-color: var(--accet-green);
+	bottom: -5px;
+	right: 0;
+	transition: width var(--default-animation);
+}
+.menu-box-link:hover::before {
+	width: 50%;
+}
+.menu-box-link:hover::after {
+	width: 50%;
 }
