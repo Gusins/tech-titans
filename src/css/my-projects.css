@@ -41,6 +41,18 @@
 	}
 }
 
+.projects-card-img-container {
+    max-height: 184px;
+
+    @media screen and (min-width: 768px) {
+        max-height: 404px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        max-height: 578px;
+    }
+}
+
 .my-projects-card {
 	max-width: 320px;
 	flex-direction: column;
