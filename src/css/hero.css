@@ -68,6 +68,10 @@
 	height: 100%;
 	border-radius: 16px;
 	background: rgba(0, 176, 104, 0.2);
+	transition: background var(--default-animation);
+}
+.hero-button:hover::after {
+	background: rgba(0, 176, 104, 0.6);
 }
 .hero-history {
 	margin-top: 40px;
@@ -100,7 +104,18 @@
 	align-items: center;
 	gap: 24px;
 }
-
+.hero-social-li {
+	font-weight: 300;
+	line-height: 150%;
+	letter-spacing: 0.03em;
+	color: var(--black);
+}
+.hero-social-li > a {
+	transition: color var(--default-animation);
+}
+.hero-social-li > a:hover {
+	color: var(--accet-green);
+}
 .menu-items-div {
 	display: flex;
 	flex-direction: column;
