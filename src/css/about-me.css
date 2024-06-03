@@ -1,5 +1,5 @@
 .about-content-photo-description {
-	padding-bottom: 40px;
+	margin-bottom: 40px;
 }
 .about-description-title {
 	font-family: var(--font-family);
@@ -16,23 +16,23 @@
 }
 
 .about-description-text {
-	padding-bottom: 24px;
+	margin-bottom: 24px;
 }
 
 .about-description-text:last-child {
-	padding-bottom: 0;
+	margin-bottom: 0;
 }
 
 .about-edu-item {
 	padding-left: 32px;
-	padding-bottom: 12px;
+	margin-bottom: 12px;
 	position: relative;
 }
 .about-edu-item.about-edu-item-role {
 	padding-left: 24px;
 }
 .about-edu-list li:last-child {
-	padding-bottom: 0;
+	margin-bottom: 0;
 }
 .about-edu-item.about-edu-item-role::before {
 	left: 6px;
@@ -59,7 +59,7 @@
 		flex-direction: row;
 		gap: 32px;
 		justify-content: space-between;
-		padding-bottom: 60px;
+		margin-bottom: 60px;
 	}
 	.about-photo {
 		width: 336px;
@@ -92,17 +92,13 @@
 }
 /**--------------ABOUT-ME-DESKTOP--------------*/
 @media screen and (min-width: 1280px) {
-	.container.my-section-about {
-		margin-left: 0;
-		margin-right: 0;
-	}
 	.title {
 		margin-bottom: 48px;
 	}
 	.about-content-photo-description {
 		gap: 136px;
 		align-self: center;
-		padding-bottom: 80px;
+		margin-bottom: 80px;
 	}
 	.block-bio {
 		width: 488px;
@@ -126,7 +122,7 @@
 		letter-spacing: 0.01em;
 	}
 	.about-photo {
-		width: 384px; 
+		width: 384px;
 		height: auto;
 	}
 	.about-content-text {
