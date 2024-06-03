@@ -129,6 +129,9 @@
 		width: 384px; 
 		height: auto;
 	}
+	.about-content-text {
+		margin-left: 208px;
+	}
 	.container.my-section-about {
 		background-image: url("/img/decor-about-@1x.png");
 		background-position: bottom 256px right 32px;
