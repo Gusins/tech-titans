@@ -3,14 +3,15 @@
 
 <head>
 	<meta charset="UTF-8" />
-	<link rel="icon" type="image/svg+xml" href="/tech-titans/favicon.svg" />
+	<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEfSURBVHgBpZK9SgNBFIVPhi1WEBKtjIRgYWEjCJb6CLG0sbETYmdpp5WWVhY+gI2l2lnaCoIIFqJLiiRFIJMlkBRhN3vucpf8QbLZD2bnZ+eeOXPv5HzfPw2C4A5AAenwjDFXOWvtfzTZwnJYkyGYFAwy4vBT67elkbK7Jm1yTce7q5v46taTfSLw2PzArfeGvOOiM+jjZe8M7/ZP1sj9zrGM+e9mu4Lzn6eoP0K1dICxK1RLh9IzWKHYyca+nNwZ9EacFKWfm4PL32e8tr4ju3GVaZ/knZXFBHhy2V2X+8YCjXQOYvvFRIBX0OApAU2abiaVzwdZpxNF7RO+xHC0ZKwEN88qrSZX54kAMpD5JVLAYnk8E4bhBQdIj41ir4fWlXpmUeR1dwAAAABJRU5ErkJggg==" type="image/png">
+	<link rel="icon" href="/tech-titans/assets/favicon-5043b1d4.svg" type="image/svg+xml">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Tech Titans</title>
 	
   <script type="module" crossorigin src="/tech-titans/commonHelpers.js"></script>
   <link rel="modulepreload" crossorigin href="/tech-titans/assets/vendor-1c96f17f.js">
   <link rel="stylesheet" href="/tech-titans/assets/vendor-e5212ee8.css">
-  <link rel="stylesheet" href="/tech-titans/assets/index-2e2cf107.css">
+  <link rel="stylesheet" href="/tech-titans/assets/index-73d4908a.css">
 </head>
 
 <body>
@@ -94,17 +95,30 @@
 
 </section>
 		<section id="about-me">
-	<div class="container">
-
+	<div class="container my-section-about">
+	
 		<h2 class="title">
 			ABOUT <span class="title-accent">ME</span>
 		</h2>
 		<div class="about-content-photo-description">
+			<div class="about-content-photo">
 			<picture class="about-photo">
-
+				<source
+				srcset="/tech-titans/assets/about-Lloyd-mob-3efa5854.png 1x, /tech-titans/assets/about-Lloyd-mob-@2x-8dd4718d.png 2x"
+				media="(max-width: 767px)"
+                />
+				<source 
+				srcset="/tech-titans/assets/about-Lloyd-tablet-@1x-80346ba5.png 1x, /tech-titans/assets/about-Lloyd-tablet-@2x-3c6961be.png 2x" 
+				media="(min-width: 768px)" 
+				/>
+				<source 
+				srcset="/tech-titans/assets/about-Lloyd-desktop-@1x-836797c9.png 1x, /tech-titans/assets/about-Lloyd-desktop-@2x-8513d097.png 2x" 
+				media="(min-width: 1280px)" 
+				/>
+				<img src="/tech-titans/assets/about-Lloyd-mob-3efa5854.png" alt="Lloyd Jefferson" />
 			</picture>
 		</div>
-		<div class="info-block">
+		<div class="info-block block-bio">
 			<h3 class="about-description-title">BIO</h3>
 			<p class="about-description-text text text">
 				I'm Lloyd Jefferson, a talented programmer specializing in software
@@ -126,7 +140,9 @@
 				latest innovations in the field.
 			</p>
 		</div>
-		<div class="info-block">
+		</div>
+		<div class="about-content-text">
+		<div class="info-block block-list">
 			<h3 class="about-description-title">EDUCATION</h3>
 			<ul class="about-edu-list">
 				<li class="about-edu-item">
@@ -148,7 +164,7 @@
 				</li>
 			</ul>
 		</div>
-		<div class="info-block">
+		<div class="info-block block-list">
 			<h3 class="about-description-title">ROLE</h3>
 			<ul class="about-edu-list">
 				<li class="about-edu-item about-edu-item-role">
@@ -167,6 +183,8 @@
 					</p>
 				</li>
 			</ul>
+			</div>
+		
 		</div>
 	</div>
 </section>
