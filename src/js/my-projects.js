@@ -1,9 +1,9 @@
 // TODO: добавити посилання на зображення проектів, та їх назви в масив, та додавати по  3 штуки по кліку load more, зробити перевірку, якщо зображень в масиві немає - не відображати кнопку load more. Добавити transition, щоб анімувати виїзд проектів.
-import a from "../img/my-projects/chego-2x.jpg";
+
 const projects = [
 	{
 		img: {
-			src: a,
+			src: '/img/my-projects/wallet.jpg',
 			srcset: '/img/my-projects/wallet.jpg 1x, /img/my-projects/wallet-2x.jpg 2x',
 			alt: 'wallet webservice'
 		},
@@ -113,7 +113,7 @@ const refs = {
 
 function createProjectMarkup(project) {
 	return `<li class="my-projects-card">
-    <img class="my-projects-card-img" srcset="${project.img.srcset}" src="${project.img.src}" alt="${project.img.alt}" />
+    <img class="my-projects-card-img" type="jpg" srcset="${project.img.srcset}" src="${project.img.src}" alt="${project.img.alt}" />
     <p class="my-projects-card-stack">${project.stack}</p>
     <div class="projects-card-container">
       <h3 class="projects-card-title">${project.title}</h3>
