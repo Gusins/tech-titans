@@ -111,7 +111,7 @@ const refs = {
 	loadMoreBtn: document.querySelector('.projects-load')
 };
 
-const createProjectMarkup = function (project) {
+function createProjectMarkup(project) {
 	return `<li class="my-projects-card">
     <img class="my-projects-card-img" srcset="${project.img.srcset}" src="${project.img.src}" alt="${project.img.alt}" />
     <p class="my-projects-card-stack">${project.stack}</p>
@@ -127,7 +127,7 @@ const createProjectMarkup = function (project) {
   </li>`;
 };
 
-const loadProjects = function () {
+function loadProjects() {
 	const projectsToLoad = projects.slice(currentIndex, currentIndex + projectsPerLoad);
 	const markup = projectsToLoad.map(createProjectMarkup).join('');
 	refs.projectsList.insertAdjacentHTML('beforeend', markup);
