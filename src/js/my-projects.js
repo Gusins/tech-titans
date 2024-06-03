@@ -113,7 +113,7 @@ const refs = {
 
 function createProjectMarkup(project) {
 	return `<li class="my-projects-card">
-    <img class="my-projects-card-img" type="jpg" srcset="${project.img.srcset}" src="${project.img.src}" alt="${project.img.alt}" />
+    <img class="my-projects-card-img" srcset="${project.img.srcset}" src="${project.img.src}" alt="${project.img.alt}" />
     <p class="my-projects-card-stack">${project.stack}</p>
     <div class="projects-card-container">
       <h3 class="projects-card-title">${project.title}</h3>
