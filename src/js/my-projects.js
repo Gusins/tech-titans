@@ -1,10 +1,29 @@
 // TODO: добавити посилання на зображення проектів, та їх назви в масив, та додавати по  3 штуки по кліку load more, зробити перевірку, якщо зображень в масиві немає - не відображати кнопку load more. Добавити transition, щоб анімувати виїзд проектів.
-
+import wallet from "../img/my-projects/wallet.jpg";
+import wallet2 from "../img/my-projects/wallet-2x.jpg";
+import green from "../img/my-projects/green.jpg";
+import green2 from "../img/my-projects/green-2x.jpg";
+import english from "../img/my-projects/green.jpg";
+import english2 from "../img/my-projects/green-2x.jpg";
+import power from "../img/my-projects/power.jpg";
+import power2 from "../img/my-projects/power-2x.jpg";
+import mimino from "../img/my-projects/mimino.jpg";
+import mimino2 from "../img/my-projects/mimino-2x.jpg";
+import vyshyvanka from "../img/my-projects/vyshyvanka.jpg";
+import vyshyvanka2 from "../img/my-projects/vyshyvanka-2x.jpg";
+import chego from "../img/my-projects/chego.jpg";
+import chego2 from "../img/my-projects/chego-2x.jpg";
+import energy from "../img/my-projects/chego.jpg";
+import energy2 from "../img/my-projects/chego-2x.jpg";
+import fruit from "../img/my-projects/fruit.jpg";
+import fruit2 from "../img/my-projects/fruit-2x.jpg";
+import starlight from "../img/my-projects/starlight.jpg";
+import starlight2 from "../img/my-projects/starlight-2x.jpg";
 const projects = [
 	{
 		img: {
-			src: './img/my-projects/wallet.jpg',
-			srcset: './img/my-projects/wallet.jpg 1x, ./img/my-projects/wallet-2x.jpg 2x',
+			src: wallet,
+			srcset: `${wallet} 1x, ${wallet2} 2x`,
 			alt: 'wallet webservice'
 		},
 		stack: 'React, JavaScript, Node JS, Git',
@@ -13,8 +32,8 @@ const projects = [
 	},
 	{
 		img: {
-			src: './img/my-projects/green.jpg',
-			srcset: './img/my-projects/green.jpg 1x, ./img/my-projects/green-2x.jpg 2x',
+			src: `${green}`,
+			srcset: `${green} 1x, ${green2} 2x`,
 			alt: 'green harvest webservice'
 		},
 		stack: 'React, JavaScript, Node JS, Git',
@@ -23,8 +42,8 @@ const projects = [
 	},
 	{
 		img: {
-			src: './img/my-projects/english.jpg',
-			srcset: './img/my-projects/english.jpg 1x, ./img/my-projects/english-2x.jpg 2x',
+			src: `${english}`,
+			srcset: `${english} 1x, ${english2} 2x`,
 			alt: 'English excellence webservice'
 		},
 		stack: 'React, JavaScript, Node JS, Git',
@@ -33,8 +52,8 @@ const projects = [
 	},
 	{
 		img: {
-			src: './img/my-projects/power.jpg',
-			srcset: './img/my-projects/power.jpg 1x, ./img/my-projects/power-2x.jpg 2x',
+			src: `${power}`,
+			srcset: `${power} 1x, .${power2} 2x`,
 			alt: 'power pulse webservice'
 		},
 		stack: 'React, JavaScript, Node JS, Git',
@@ -43,8 +62,8 @@ const projects = [
 	},
 	{
 		img: {
-			src: './img/my-projects/mimino.jpg',
-			srcset: './img/my-projects/mimino.jpg 1x, ./img/my-projects/mimino-2x.jpg 2x',
+			src: `${mimino}`,
+			srcset: `${mimino} 1x, ${mimino2} 2x`,
 			alt: 'mimino website'
 		},
 		stack: 'React, JavaScript, Node JS, Git',
@@ -53,8 +72,8 @@ const projects = [
 	},
 	{
 		img: {
-			src: './img/my-projects/vyshyvanka.jpg',
-			srcset: './img/my-projects/vyshyvanka.jpg 1x, ./img/my-projects/vyshyvanka-2x.jpg 2x',
+			src: `${vyshyvanka}`,
+			srcset: `${vyshyvanka} 1x, ${vyshyvanka2} 2x`,
 			alt: 'vyshyvanka vibes Landing Page'
 		},
 		stack: 'React, JavaScript, Node JS, Git',
@@ -63,8 +82,8 @@ const projects = [
 	},
 	{
 		img: {
-			src: './img/my-projects/chego.jpg',
-			srcset: './img/my-projects/chego.jpg 1x, ./img/my-projects/chego-2x.jpg 2x',
+			src: `${chego}`,
+			srcset: `${chego} 1x, ${chego2} 2x`,
 			alt: 'chego jewelry website'
 		},
 		stack: 'React, JavaScript, Node JS, Git',
@@ -73,8 +92,8 @@ const projects = [
 	},
 	{
 		img: {
-			src: './img/my-projects/energy.jpg',
-			srcset: './img/my-projects/energy.jpg 1x, ./img/my-projects/energy-2x.jpg 2x',
+			src: `${energy}`,
+			srcset: `${energy} 1x, ${energy2} 2x`,
 			alt: 'energy flow webservice'
 		},
 		stack: 'React, JavaScript, Node JS, Git',
@@ -83,8 +102,8 @@ const projects = [
 	},
 	{
 		img: {
-			src: './img/my-projects/fruit.jpg',
-			srcset: './img/my-projects/fruit.jpg 1x, ./img/my-projects/fruit-2x.jpg 2x',
+			src: `${fruit}`,
+			srcset: `${fruit} 1x, ${fruit2} 2x`,
 			alt: 'fruitbox online store'
 		},
 		stack: 'React, JavaScript, Node JS, Git',
@@ -93,8 +112,8 @@ const projects = [
 	},
 	{
 		img: {
-			src: './img/my-projects/starlight.jpg',
-			srcset: './img/my-projects/starlight.jpg 1x, ./img/my-projects/starlight-2x.jpg 2x',
+			src: `${starlight}`,
+			srcset: `${starlight} 1x, ${starlight2} 2x`,
 			alt: 'starlight studio landing page'
 		},
 		stack: 'React, JavaScript, Node JS, Git',
