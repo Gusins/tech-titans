@@ -262,12 +262,11 @@
 	transform: translatey(-50%) rotate(-45deg);
 }
 
-
 .dark-theme .hero-h1 {
 	color: var(--white);
 }
 .dark-theme .fullstack-developer-span {
-    color: var(--darkTh-accet-green);
+	color: var(--darkTh-accet-green);
 }
 .dark-theme .hero-button::after {
 	color: var(--white);
@@ -275,8 +274,8 @@
 .dark-theme .hero-button:hover::after {
 	background-color: var(--darkTh-accet-green);
 }
-.hero-history-accent  {
-	background-color: var(--darkTh-black);
+.hero-history-accent {
+	background-color: transparent;
 }
 .dark-theme .hero-button {
 	color: var(--white);
@@ -285,9 +284,9 @@
 	color: var(--white);
 }
 .dark-theme .dark-theme .hero-history-accent {
-    color: var(--darkTh-accet-green);
+	color: var(--darkTh-accet-green);
 }
-.dark-theme .hero-social-div  {
+.dark-theme .hero-social-div {
 	background-color: var(--darkTh-light-grey);
 }
 .dark-theme .hero-social-li {
