@@ -122,3 +122,33 @@
 		margin-bottom: 648px;
 	}
 }
+
+
+
+
+.dark-theme .faq > .container .ac {
+	background: var(--darkTh-black);
+	border-bottom: 1px solid var(--darkTh-light-grey);
+}
+.dark-theme .faq > .container .ac.is-active {
+	background: var(--darkTh-light-accent);
+}
+.dark-theme .first-line {
+	background-color: var(--darkTh-light-accent);
+}
+.dark-theme .second-line {
+	background-color: var(--darkTh-light-accent);
+}
+.dark-theme .faq > .container .ac .ac-trigger {
+	color: var(--white);	
+}
+.dark-theme .faq > .container .ac .ac-panel .ac-text {
+	color: var(--white);
+}
+.dark-theme .ac {
+	border: 1px solid var(--darkTh-black);
+}
+
+.dark-theme .more-content {
+	color: var(--white);
+}

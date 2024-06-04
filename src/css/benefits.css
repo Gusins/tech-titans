@@ -32,6 +32,7 @@
 	margin-bottom: 16px;
 }
 .benefits-icon-item {
+
 	fill: none;
 	width: 24px;
 	height: 24px;
@@ -126,4 +127,29 @@
 	.benefits-list-item:nth-child(4) {
 		grid-column: 3;
 	}
+}
+
+
+
+
+
+.dark-theme .benefits-title {
+  color: var(--white);
+}
+.dark-theme .benefits-title span {
+  color: var(--darkTh-accet-green);
+}
+.dark-theme .benefits-subtitle {
+  color: var(--white);
+}
+.dark-theme .benefits-item-text {
+  color: var(--white);
+}
+
+.dark-theme .benefits-icons-section {
+  background: rgba(0, 176, 104, 0.1);
+}
+
+.dark-theme .benefits-icon-item {
+  stroke: var(--darkTh-accet-green);
 }

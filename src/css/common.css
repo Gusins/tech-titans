@@ -180,3 +180,8 @@ section:first-child {
 		margin: 0 auto;
 	}
 }
+
+.dark-theme {
+	background-color: var(--darkTh-black);
+}
+

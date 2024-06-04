@@ -142,3 +142,22 @@
 		}
 	}
 }
+
+.dark-theme .title {
+	color : var(--white)
+}
+.dark-theme .title-accent {
+	color : var(--darkTh-accet-green)
+}
+.dark-theme .about-description-title{
+	color: var(--white);
+}
+.dark-theme .about-edu-item::before{
+	color: var(--white);
+}
+.dark-theme .about-description-text{
+	color: var(--white);
+}
+.dark-theme .text  {
+	color: var(--white);
+}

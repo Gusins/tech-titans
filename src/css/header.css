@@ -103,3 +103,16 @@
 		color: var(--accet-green);
 	}
 }
+
+
+
+.dark-theme .header-logo-p {
+	color: var(--white);
+}
+.dark-theme .header-logo-span {
+	color : var(--darkTh-accet-green);
+}
+.dark-theme .header-menu-li {
+	color : var(--white);
+}
+
