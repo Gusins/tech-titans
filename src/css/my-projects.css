@@ -40,32 +40,32 @@
 		gap: 80px;
 	}
 }
+
 .projects-card-img-container {
-	max-height: 184px;
+	height: 184px;
 
 	@media screen and (min-width: 768px) {
-		max-height: 404px;
+		height: 404px;
 	}
 
 	@media screen and (min-width: 1280px) {
-		max-height: 578px;
+		height: 578px;
 	}
 }
 
-
 .my-projects-card {
-	max-width: 320px;
+	width: 320px;
 	flex-direction: column;
 	opacity: 0;
 	transform: translateY(20px);
 	transition: opacity 0.5s ease, transform 0.5s ease;
 
 	@media screen and (min-width: 767px) {
-		max-width: 704px;
+		width: 704px;
 	}
 
 	@media screen and (min-width: 1279px) {
-		max-width: 1008px;
+		width: 1008px;
 	}
 }
 
@@ -75,21 +75,28 @@
 }
 
 .projects-card-img-container {
-	max-height: 184px;
-	margin-bottom: 16px;
+	border-radius: 16px;
+	object-fit: cover;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 12px;
 
 	@media screen and (min-width: 768px) {
-		max-height: 404px;
+		border-radius: 24px;
+		height: 404px;
+		margin-bottom: 16px;
 	}
 
 	@media screen and (min-width: 1280px) {
-		max-height: 578px;
-		margin-bottom: 12px;
+		height: 578px;
 	}
 }
 
-.my-projects-card-img {
-	border-radius: 16px;
+.my-projects .my-projects-card-img {
+	width: 100%;
 }
 
 .my-projects-card-stack {
@@ -107,10 +114,9 @@
 .projects-card-container {
 	display: flex;
 	flex-direction: column;
-
 	@media screen and (min-width: 768px) {
 		flex-direction: row;
-		align-items: flex-start;
+		align-items: center;
 	}
 }
 
@@ -121,7 +127,8 @@
 	letter-spacing: 0.02em;
 	text-transform: uppercase;
 	margin-bottom: 16px;
-	max-width: 547px;
+	width: 100%;
+	color: var(--black);
 
 	@media screen and (min-width: 768px) {
 		align-items: flex-start;
@@ -129,18 +136,14 @@
 		line-height: 1.33;
 		letter-spacing: 0.01em;
 		margin-bottom: 0;
-		max-width: 763px;
-        
 	}
 }
 
 .projects-card-link {
 	display: flex;
 	align-items: center;
-	text-decoration: none;
 	border-radius: 8px;
 	padding: 12px 24px;
-	width: 125px;
 	height: 48px;
 	margin-left: auto;
 	gap: 12px;
@@ -157,7 +160,7 @@
 	line-height: 1.5;
 	letter-spacing: 0.03em;
 	color: var(--black);
-	margin-right: 5px;
+	/* margin-right: 5px; */
 }
 
 .projects-card-link-svg {
@@ -209,8 +212,6 @@
 	color: var(--accet-green);
 }
 
-
-
 .dark-theme .projects-title {
 	color: var(--white);
 }
@@ -232,7 +233,7 @@
 }
 
 .dark-theme .projects-card-link:hover {
-	background-color: #3B3F45;
+	background-color: #3b3f45;
 }
 
 .dark-theme .projects-card-link-span {

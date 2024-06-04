@@ -45,10 +45,10 @@ const projects = [
 		img: {
 			src: `${english}`,
 			srcset: `${english} 1x, ${english2} 2x`,
-			alt: 'English excellence webservice'
+			alt: 'English Exellence website'
 		},
 		stack: 'React, JavaScript, Node JS, Git',
-		title: 'English excellence website',
+		title: 'English Exellence website',
 		link: 'https://github.com/Fovardell/tech-titans'
 	},
 	{
