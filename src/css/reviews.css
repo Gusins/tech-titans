@@ -102,8 +102,8 @@
 	stroke: var(--black);
 }
 
-.swiper-button-prev:not(.swiper-button-disabled):focus,
-.swiper-button-next:not(.swiper-button-disabled):focus {
+.swiper-button-prev:not(.swiper-button-disabled):hover,
+.swiper-button-next:not(.swiper-button-disabled):hover {
 	background-color: var(--light-grey);
 }
 
