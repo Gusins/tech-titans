@@ -52,6 +52,7 @@
 	border-radius: 1px;
 	background: var(--accet-green);
 }
+
 /**--------------ABOUT-ME-TABLET--------------*/
 @media screen and (min-width: 768px) {
 	.about-content-photo-description {
@@ -107,6 +108,9 @@
 		margin-top: 272px;
 		margin-left: 208px;
 	}
+	.about-photo {
+		width: 384px;
+	}
 	.about-content-text {
 		gap: 136px;
 	}
@@ -121,10 +125,7 @@
 		line-height: 1.33333;
 		letter-spacing: 0.01em;
 	}
-	.about-photo {
-		width: 384px;
-		height: auto;
-	}
+
 	.about-content-text {
 		margin-left: 208px;
 	}
