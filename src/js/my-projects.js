@@ -48,7 +48,7 @@ const projects = [
 			alt: 'English excellence webservice'
 		},
 		stack: 'React, JavaScript, Node JS, Git',
-		title: 'English excellence webservice',
+		title: 'English excellence website',
 		link: 'https://github.com/Fovardell/tech-titans'
 	},
 	{
