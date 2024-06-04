@@ -91,3 +91,22 @@
 		display: inline-flex;
 	}
 }
+
+
+
+.dark-theme .jefferson {
+	color: var(--darkTh-accet-green);
+}
+.dark-theme .social:hover,
+.dark-theme .social:active {
+	color: var(--darkTh-accet-green);
+}
+.dark-theme .copyright {
+	color: var(--white);
+}
+.dark-theme .footer-logo {
+	color: var(--white);
+}
+.dark-theme .social {
+	color: var(--white);
+}

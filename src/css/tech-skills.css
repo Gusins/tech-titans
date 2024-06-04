@@ -127,3 +127,28 @@
 		top: 20px;
 	}
 }
+
+
+
+.dark-theme .tech-skills-line.green {
+	background: #214136;
+}
+.dark-theme .tech-skills-line.gray {
+	background: var(--darkTh-light-grey);
+}
+
+.dark-theme .tech-skills-list-item.green:not(:first-child):before {
+	background: var(--darkTh-accet-green);
+}
+
+.dark-theme .tech-skills-list-item.gray:not(:first-child):before {
+	background: var(--white);
+}
+
+.dark-theme .tech-skills-list-item.green {
+	color: var(--white);
+}
+
+.dark-theme .tech-skills-list-item.gray {
+	color: var(--darkTh-accet-green);
+}

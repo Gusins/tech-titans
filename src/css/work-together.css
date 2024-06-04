@@ -229,3 +229,35 @@
 		padding: 12px 24px;
 	}
 }
+
+
+
+
+
+.dark-theme .address-item > a:hover {
+	color: var(--accet-green);
+}
+.dark-theme .contacts-message,
+.dark-theme .contacts-email {
+	color: var(--white);
+	background: var(--darkTh-light-grey);
+}
+.dark-theme .contacts-message::placeholder,
+.dark-theme .contacts-email::placeholder {
+	color: rgba(240, 240, 240, 0.4);
+}
+.dark-theme .contacts-button {
+	background: var(--accet-green);
+	color: var(--black);
+}
+.dark-theme .contacts-button:hover,
+.dark-theme .contacts-button:active {
+	background-color: var(--darkTh-accet-green);
+}
+
+.dark-theme .attantion-text {
+	color: rgba(240, 240, 240, 1);
+}
+.dark-theme .invalid {
+	color: rgba(240, 87, 72, 1);
+}

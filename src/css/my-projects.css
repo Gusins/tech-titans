@@ -192,3 +192,49 @@
 .projects-load:hover {
 	color: var(--accet-green);
 }
+
+
+
+.dark-theme .projects-title {
+	color: var(--white);
+}
+
+.dark-theme .projects-span {
+	color: var(--darkTh-accet-green);
+}
+
+.dark-theme .my-projects-card-stack {
+	color: var(--white);
+}
+
+.dark-theme .projects-card-title {
+	color: var(--white);
+}
+
+.dark-theme .projects-card-link {
+	background-color: var(--darkTh-light-grey);
+}
+
+.dark-theme .projects-card-link:hover {
+	background-color: #3B3F45;
+}
+
+.dark-theme .projects-card-link-span {
+	color: var(--white);
+}
+
+.dark-theme .projects-card-link-svg {
+	stroke: var(--darkTh-accet-green);
+}
+
+.dark-theme .projects-load {
+	color: var(--white);
+}
+
+.dark-theme .projects-load::after {
+	background-color: var(--darkTh-accet-green);
+}
+
+.dark-theme .projects-load:hover {
+	color: var(--darkTh-accet-green);
+}

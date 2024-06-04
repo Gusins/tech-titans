@@ -105,3 +105,42 @@
 		background: #e4e5e6;
 	}
 }
+
+
+
+
+.dark-theme .reviews-title {
+	color: var(--white)
+}
+.dark-theme .swiper-slide {
+	background-color: var(--darkTh-light-grey);
+}
+.dark-theme .swiper-text {
+	color: var(--white);
+}
+.dark-theme .swiper-title {
+	color: var(--white);
+}
+@media screen and (min-width: 1280px) {
+	.dark-theme .swiper-button-next:focus,
+	.dark-theme .swiper-button-prev:focus,
+	.dark-theme .swiper-button-next:hover,
+	.dark-theme .swiper-button-prev:hover {
+		background: #3B3F45;
+	}
+}
+
+
+
+/* waiting */
+/* .dark-themeм .swiper-button-next,
+.dark-theme .swiper-button-prev {
+	background-color: var(--white);
+}
+.dark-theme .swiper-button {
+	fill: var(--white);
+}
+.dark-theme .notification {
+	color: red;
+} */
+
