@@ -31,10 +31,10 @@
     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1.75 16.25 14.5-14.5m0 0H2.75m13.5 0v13.5"></path>
   </symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" id="ReviewsLeft">
-    <path stroke="#383A3D" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4M10 6l-6 6 6 6"></path>
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4M10 6l-6 6 6 6"></path>
   </symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" id="ReviewsRight">
-    <path stroke="#F0F0F0" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12h16M14 6l6 6-6 6"></path>
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12h16M14 6l6 6-6 6"></path>
   </symbol>
   <symbol xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 9 9" id="TechSkillssQuar">
     <rect width="8" height="8" fill="#F0F0F0" rx="2" transform="scale(-1 1) rotate(-2 6.304 248.032)"></rect>
