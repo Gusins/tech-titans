@@ -54,7 +54,7 @@ const projects = [
 	{
 		img: {
 			src: `${power}`,
-			srcset: `${power} 1x, .${power2} 2x`,
+			srcset: `${power} 1x, ${power2} 2x`,
 			alt: 'power pulse webservice'
 		},
 		stack: 'React, JavaScript, Node JS, Git',
