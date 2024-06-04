@@ -1,0 +1,24 @@
+.go-top {
+	position: fixed;
+	z-index: 3;
+	right: 50px;
+	bottom: 50px;
+	cursor: pointer;
+	opacity: 0;
+	font-size: 20px;
+	border: 1px solid var(--accet-green);
+	border-radius: 50%;
+	background-color: var(--white);
+	padding: 15px 12px;
+	transition: background-color var(--default-animation), opacity var(--default-animation);
+}
+.go-top > svg {
+	transform: rotate(-90deg);
+}
+.go-top:hover {
+	background-color: var(--light-accent);
+}
+
+.go-top--show {
+	opacity: 1;
+}
