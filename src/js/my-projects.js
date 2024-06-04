@@ -19,7 +19,7 @@ import fruit from "../img/my-projects/fruit.jpg";
 import fruit2 from "../img/my-projects/fruit-2x.jpg";
 import starlight from "../img/my-projects/starlight.jpg";
 import starlight2 from "../img/my-projects/starlight-2x.jpg";
-import arrowSvg from "../img/svg/spriteForEachOpt.svg";
+import arrowSvg from "../img/sprite.svg";
 const projects = [
 	{
 		img: {
