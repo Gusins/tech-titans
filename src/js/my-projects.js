@@ -19,7 +19,7 @@ import fruit from "../img/my-projects/fruit.jpg";
 import fruit2 from "../img/my-projects/fruit-2x.jpg";
 import starlight from "../img/my-projects/starlight.jpg";
 import starlight2 from "../img/my-projects/starlight-2x.jpg";
-import arrowSvg from "../img/svg/spriteForEachOpt.svg";
+import arrowSvg from "../img/sprite.svg";
 const projects = [
 	{
 		img: {
@@ -48,13 +48,13 @@ const projects = [
 			alt: 'English excellence webservice'
 		},
 		stack: 'React, JavaScript, Node JS, Git',
-		title: 'English excellence webservice',
+		title: 'English excellence website',
 		link: 'https://github.com/Fovardell/tech-titans'
 	},
 	{
 		img: {
 			src: `${power}`,
-			srcset: `${power} 1x, .${power2} 2x`,
+			srcset: `${power} 1x, ${power2} 2x`,
 			alt: 'power pulse webservice'
 		},
 		stack: 'React, JavaScript, Node JS, Git',
