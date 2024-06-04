@@ -119,6 +119,7 @@
     max-width: 704px;
     max-height: 372px;
     margin-bottom: -20px;
+    font-size: 108px;
   }
   .benefits-list {
     display: grid;
