@@ -104,15 +104,58 @@
 	}
 }
 
-
+.swich-theme {
+	width: 48px;
+	height: 24px;
+	background: var(--light-grey);
+	border-radius: 16px;
+	position: relative;
+	z-index: 2;
+	transition: background-color 250ms ease-in-out;
+}
+.swich-theme::before {
+	content: "";
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background-color: var(--accet-green);
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	z-index: 2;
+	transition: transform 400ms ease-in-out;
+}
+.swich-theme::after {
+	content: "";
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background-color: var(--light-grey);
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	z-index: 1;
+	transition: background-color 250ms ease-in-out;
+}
+.swich-theme.dark {
+	background-color: var(--darkTh-light-grey);
+}
+.swich-theme.dark::after {
+	z-index: 2;
+	transition: transform 600ms ease-in;
+	background-color: var(--darkTh-light-grey);
+	transform: translate(15px, 0);
+}
+.swich-theme.dark::before {
+	transform: translate(24px, 0);
+}
 
 .dark-theme .header-logo-p {
 	color: var(--white);
 }
 .dark-theme .header-logo-span {
-	color : var(--darkTh-accet-green);
+	color: var(--darkTh-accet-green);
 }
 .dark-theme .header-menu-li {
-	color : var(--white);
+	color: var(--white);
 }
-
