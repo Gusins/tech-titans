@@ -42,7 +42,7 @@
 }
 
 .projects-card-img-container {
-	height: 184px;
+	max-height: 184px;
 
 	@media screen and (min-width: 768px) {
 		height: 404px;
@@ -54,7 +54,7 @@
 }
 
 .my-projects-card {
-	width: 320px;
+	width: 100%;
 	flex-direction: column;
 	opacity: 0;
 	transform: translateY(20px);
