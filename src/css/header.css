@@ -104,7 +104,7 @@
 	}
 }
 
-.swich-theme {
+.switch-theme {
 	width: 48px;
 	height: 24px;
 	background: var(--light-grey);
@@ -113,7 +113,7 @@
 	z-index: 2;
 	transition: background-color 250ms ease-in-out;
 }
-.swich-theme::before {
+.switch-theme::before {
 	content: "";
 	height: 20px;
 	width: 20px;
@@ -125,7 +125,7 @@
 	z-index: 2;
 	transition: transform 400ms ease-in-out;
 }
-.swich-theme::after {
+.switch-theme::after {
 	content: "";
 	height: 20px;
 	width: 20px;
@@ -137,16 +137,16 @@
 	z-index: 1;
 	transition: background-color 250ms ease-in-out;
 }
-.swich-theme.dark {
+.switch-theme.dark {
 	background-color: var(--darkTh-light-grey);
 }
-.swich-theme.dark::after {
+.switch-theme.dark::after {
 	z-index: 2;
 	transition: transform 600ms ease-in;
 	background-color: var(--darkTh-light-grey);
 	transform: translate(15px, 0);
 }
-.swich-theme.dark::before {
+.switch-theme.dark::before {
 	transform: translate(24px, 0);
 }
 
