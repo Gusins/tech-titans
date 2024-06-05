@@ -80,6 +80,7 @@ body {
 	flex-direction: column;
 	min-height: 100vh;
 	background-color: var(--white);
+	transition: background-color var(--default-animation);
 }
 .main {
 	flex: 1 0 auto;
