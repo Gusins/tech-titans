@@ -45,6 +45,7 @@
 	padding: 32px;
 	background-color: var(--light-grey);
 	min-height: 296px;
+	height: fit-content;
 }
 
 .reviews .swiper-text {
