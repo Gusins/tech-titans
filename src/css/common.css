@@ -176,6 +176,8 @@ section:first-child {
 		padding-top: 0px;
 	}
 	.container {
+		padding: 0 32px;
+
 		max-width: calc(1216px + (32px * 2));
 		margin: 0 auto;
 	}
@@ -184,4 +186,3 @@ section:first-child {
 .dark-theme {
 	background-color: var(--darkTh-black);
 }
-
