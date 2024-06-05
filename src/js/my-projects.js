@@ -126,7 +126,7 @@ const projects = [
 function createProjectMarkup(project) {
 	return `<li class="my-projects-card">
 	<div class="projects-card-img-container">
-        <img class="my-projects-card-img" srcset="${project.img.srcset}" src="${project.img.src}" alt="${project.img.alt}" />
+        <img class="my-projects-card-img" srcset="${project.img.srcset}" src="${project.img.src}" loading="lazy" alt="${project.img.alt}" />
     </div>
     <p class="my-projects-card-stack">${project.stack}</p>
     <div class="projects-card-container">
