@@ -109,7 +109,7 @@
 		align-items: end;
 		justify-content: space-between;
 		background-image: url("/img/faq-background@1x.png");
-		background-position: bottom 0px left 20px;
+		background-position: bottom 0px left 32px;
 		background-repeat: no-repeat;
 		background-size: 526px 408px;
 	}
@@ -122,9 +122,6 @@
 		margin-bottom: 648px;
 	}
 }
-
-
-
 
 .dark-theme .faq > .container .ac {
 	background: var(--darkTh-black);
@@ -140,7 +137,7 @@
 	background-color: var(--darkTh-light-accent);
 }
 .dark-theme .faq > .container .ac .ac-trigger {
-	color: var(--white);	
+	color: var(--white);
 }
 .dark-theme .faq > .container .ac .ac-panel .ac-text {
 	color: var(--white);

@@ -32,7 +32,6 @@
 	margin-bottom: 16px;
 }
 .benefits-icon-item {
-
 	fill: none;
 	width: 24px;
 	height: 24px;
@@ -95,7 +94,7 @@
 	.benefits > .container {
 		padding-top: 164px;
 		background-image: url("../img/desk-contacts-background@1x.png");
-		background-position: top 16px right 20px;
+		background-position: top 16px right 32px;
 		background-size: 526px 408px;
 		background-repeat: no-repeat;
 	}
@@ -129,27 +128,23 @@
 	}
 }
 
-
-
-
-
 .dark-theme .benefits-title {
-  color: var(--white);
+	color: var(--white);
 }
 .dark-theme .benefits-title span {
-  color: var(--darkTh-accet-green);
+	color: var(--darkTh-accet-green);
 }
 .dark-theme .benefits-subtitle {
-  color: var(--white);
+	color: var(--white);
 }
 .dark-theme .benefits-item-text {
-  color: var(--white);
+	color: var(--white);
 }
 
 .dark-theme .benefits-icons-section {
-  background: rgba(0, 176, 104, 0.1);
+	background: rgba(0, 176, 104, 0.1);
 }
 
 .dark-theme .benefits-icon-item {
-  stroke: var(--darkTh-accet-green);
+	stroke: var(--darkTh-accet-green);
 }

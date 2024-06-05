@@ -158,7 +158,7 @@
 	.work-together .container {
 		background-image: url("../img/tab-contacts-background@1x.png");
 		background-position: top 20px right 32px;
-		background-size: 390px 265px;
+		background-size: 336px 265px;
 	}
 	@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
 		.work-together .container {
@@ -229,10 +229,6 @@
 		padding: 12px 24px;
 	}
 }
-
-
-
-
 
 .dark-theme .address-item > a:hover {
 	color: var(--accet-green);
