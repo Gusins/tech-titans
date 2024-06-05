@@ -4,10 +4,18 @@
 			<span class="profile-row">
 				<span class="profile-hello-span">HELLO, I AM</span>
 				<span class="profile-picture-span">
-					<img
-						srcset="/img/smallPortrait@1x.png 1x, /img/smallPortrait@2x.png 2x"
-						loading="lazy" src="/img/smallPortrait@1x.png" alt="Profile Picture"
-						class="profile-picture">
+					<picture>
+						<source srcset="
+							/img/general-webp/smallPortrait@1x.webp 1x,
+							/img/general-webp/smallPortrait@2x.webp 2x
+						" type="image/webp" />
+						<source srcset="
+							/img/smallPortrait@1x.png 1x,
+							/img/smallPortrait@2x.png 2x
+						" type="image/jpg" />
+						<img class="profile-picture" src="/img/smallPortrait@1x.png"
+							alt="Profile Picture" loading="lazy" />
+					</picture>
 				</span>
 			</span>
 			<span class="fullstack-developer-span">FULLSTACK DEVELOPER</span>
