@@ -22,3 +22,8 @@
 .go-top--show {
 	opacity: 1;
 }
+
+.dark-theme .go-top {
+	background-color: var(--darkTh-black);
+	border-color: var(--darkTh-accet-green);
+}

@@ -243,12 +243,12 @@
 	color: rgba(240, 240, 240, 0.4);
 }
 .dark-theme .contacts-button {
-	background: var(--accet-green);
-	color: var(--black);
+	background: var(--darkTh-accet-green);
+	color: var(--white);
 }
 .dark-theme .contacts-button:hover,
 .dark-theme .contacts-button:active {
-	background-color: var(--darkTh-accet-green);
+	background-color: #009156;
 }
 
 .dark-theme .attantion-text {

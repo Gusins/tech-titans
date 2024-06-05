@@ -108,3 +108,10 @@ body.modal-open {
 .menu-box-link:hover::after {
 	width: 50%;
 }
+
+.dark-theme .burger-line {
+	background-color: var(--white);
+}
+.dark-theme .menu-container {
+	background-color: var(--darkTh-black);
+}

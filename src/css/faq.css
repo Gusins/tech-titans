@@ -57,9 +57,6 @@
 	top: 15px;
 	transform: rotate(-45deg);
 }
-
-.ac-header {
-}
 .faq > .container .ac .ac-trigger {
 	font-family: var(--font-family);
 	font-weight: 400;

@@ -56,6 +56,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
+	stroke: var(--black);
 }
 
 .close:hover,
@@ -94,4 +95,20 @@
 	.modal-header {
 		margin-top: 20px;
 	}
+}
+
+.dark-theme .modal-header {
+	color: var(--darkTh-accet-green);
+}
+.dark-theme .modal-content {
+	background: var(--darkTh-light-grey);
+}
+.dark-theme .modal-text {
+	color: var(--white);
+}
+.dark-theme .close {
+	background-color: inherit;
+}
+.dark-theme .close > svg {
+	stroke: var(--white);
 }

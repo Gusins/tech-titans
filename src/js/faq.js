@@ -8,6 +8,10 @@ const acc = new Accordion('.accordion-container', {
 	},
 	beforeClose: function (currentElement) {
 		if (!currentElement.previousElementSibling) return;
+		if (document.body.classList.contains("dark-theme")) {
+			currentElement.previousElementSibling.style.borderBottom = "1px solid #2a2d32";
+			return;
+		} else { }
 		currentElement.previousElementSibling.style.borderBottom = "1px solid #ccc";
 	},
 
