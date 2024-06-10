@@ -41,7 +41,7 @@ their unique skills to the creation of Tech-Titans.
 
 To view the project, simply follow the link below:
 
-[Tech-Titans on GitHub Pages](https://fovardell.github.io/tech-titans/)
+[Tech-Titans on GitHub Pages](https://gusins.github.io/tech-titans/)
 
 ## Usage Examples
 
